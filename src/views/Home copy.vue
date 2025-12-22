@@ -14,8 +14,8 @@ function switchLang(lang: string) {
 
     <!-- Rwanda -->
     <div class="country">
-      <img src="/rwanda.png" alt="Rwanda Coat of Arms" />
-      <span>{{ t('countries.rwanda') }}</span>
+      <img src="/rwanda.png" alt="Republic of Rwanda Coat of Arms" />
+      <span>Republic of Rwanda</span>
     </div>
 
     <!-- Title -->
@@ -41,8 +41,8 @@ function switchLang(lang: string) {
 
     <!-- Senegal -->
     <div class="country">
-      <img src="/senegal.png" alt="Senegal Coat of Arms" />
-      <span>{{ t('countries.senegal') }}</span>
+      <img src="/senegal.png" alt="Republic of Senegal Coat of Arms" />
+      <span>Republic of Senegal</span>
     </div>
 
   </header>
@@ -61,7 +61,6 @@ function switchLang(lang: string) {
     <p>{{ t('ambassador_message') }}</p>
   </section>
 </template>
-
 
 <style scoped>
 /* ================= HEADER ================= */

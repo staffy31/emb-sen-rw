@@ -1,0 +1,19 @@
+{
+  "hero_title": "Embassy of the Republic of Senegal in Rwanda",
+  "hero_subtitle": "Strengthening friendship, cooperation, and solidarity",
+
+  "countries": {
+    "rwanda": "Republic of Rwanda",
+    "senegal": "Republic of Senegal"
+  },
+
+  "services": {
+    "consular": "Consular Services",
+    "visa": "Visas",
+    "passport": "Passports",
+    "appointment": "Appointments"
+  },
+
+  "ambassador_title": "Message from the Ambassador",
+  "ambassador_message": "I warmly welcome you to the official website of the Embassy of the Republic of Senegal in Rwanda."
+}

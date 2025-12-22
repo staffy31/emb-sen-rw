@@ -1,19 +1,22 @@
 {
   "hero_title": "Ambassade de la République du Sénégal au Rwanda",
   "hero_subtitle": "Renforcer l’amitié, la coopération et la solidarité",
-
   "countries": {
     "rwanda": "République du Rwanda",
     "senegal": "République du Sénégal"
   },
-
   "services": {
     "consular": "Services consulaires",
     "visa": "Visas",
     "passport": "Passeports",
     "appointment": "Rendez-vous"
   },
-
   "ambassador_title": "Message de l’Ambassadeur",
-  "ambassador_message": "Je vous souhaite la bienvenue sur le site officiel de l’Ambassade de la République du Sénégal au Rwanda."
+  "ambassador_message": "Je vous souhaite la bienvenue sur le site officiel de l’Ambassade de la République du Sénégal au Rwanda.",
+  "republic": "RÉPUBLIQUE DU SÉNÉGAL",
+  "motto": {
+    "people": "Un Peuple",
+    "goal": "Un But",
+    "faith": "Une Foi"
+  }
 }

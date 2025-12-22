@@ -18,22 +18,31 @@ function switchLang(lang: string) {
       <span>{{ t('countries.rwanda') }}</span>
     </div>
 
-    <!-- Title -->
+    <!-- CENTER TITLE BLOCK -->
     <div class="title">
+
+      <!-- REPUBLIC NAME -->
+      <div class="republic">
+        <h1>{{ t('republic') }}</h1>
+      </div>
+
+      <!-- NATIONAL MOTTO -->
+      <div class="motto">
+        <span>{{ t('motto.people') }}</span>
+        <span>{{ t('motto.goal') }}</span>
+        <span>{{ t('motto.faith') }}</span>
+      </div>
+
+      <!-- EMBASSY NAME -->
       <h1>{{ t('hero_title') }}</h1>
       <p>{{ t('hero_subtitle') }}</p>
 
+      <!-- LANGUAGE SWITCH -->
       <div class="lang">
-        <button
-          :class="{ active: locale === 'fr' }"
-          @click="switchLang('fr')"
-        >
+        <button :class="{ active: locale === 'fr' }" @click="switchLang('fr')">
           FR
         </button>
-        <button
-          :class="{ active: locale === 'en' }"
-          @click="switchLang('en')"
-        >
+        <button :class="{ active: locale === 'en' }" @click="switchLang('en')">
           EN
         </button>
       </div>
@@ -62,14 +71,13 @@ function switchLang(lang: string) {
   </section>
 </template>
 
-
 <style scoped>
 /* ================= HEADER ================= */
 .header {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 24px 40px;
+  padding: 26px 40px;
   border-bottom: 3px solid #1f7a3a;
   background: #ffffff;
 }
@@ -92,10 +100,52 @@ function switchLang(lang: string) {
   letter-spacing: 0.5px;
 }
 
+/* ================= TITLE BLOCK ================= */
 .title {
   text-align: center;
 }
 
+/* REPUBLIC */
+.republic {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* MOTTO */
+.motto {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 14px;
+}
+
+.motto span {
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  padding-bottom: 6px;
+}
+
+/* Elegant underline */
+.motto span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 65%;
+  height: 2px;
+  background: linear-gradient(to right,
+      transparent,
+      #1f7a3a,
+      transparent);
+  transform: translateX(-50%);
+}
+
+/* EMBASSY NAME */
 .title h1 {
   font-size: 22px;
   font-weight: 700;
@@ -104,7 +154,7 @@ function switchLang(lang: string) {
 
 .title p {
   font-size: 15px;
-  margin: 6px 0 12px;
+  margin: 6px 0 14px;
   color: #4b5563;
 }
 
@@ -166,6 +216,11 @@ function switchLang(lang: string) {
 
   .country img {
     height: 60px;
+  }
+
+  .motto {
+    color: #4b5563;
+    gap: 18px;
   }
 }
 </style>

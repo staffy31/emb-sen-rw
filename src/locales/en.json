@@ -18,5 +18,15 @@
     "people": "One People",
     "goal": "One Goal",
     "faith": "One Faith"
+  },
+  "hero_section": {
+    "title": "Discover Senegal",
+    "description": "A country of culture, innovation, sport, and international cooperation, united with Rwanda through strong bilateral relations.",
+    "services": "Our services",
+    "contact": "Contact us"
+  },
+    "topbar": {
+    "contact": "Official Contact",
+    "emergency": "Emergency"
   }
 }

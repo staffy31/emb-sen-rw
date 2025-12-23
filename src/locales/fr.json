@@ -18,5 +18,15 @@
     "people": "Un Peuple",
     "goal": "Un But",
     "faith": "Une Foi"
+  },
+  "hero_section": {
+    "title": "Découvrir le Sénégal",
+    "description": "Un pays de culture, d’innovation, de sport et de coopération internationale, uni au Rwanda par des relations fraternelles.",
+    "services": "Nos services",
+    "contact": "Nous contacter"
+  },
+    "topbar": {
+    "contact": "Contact officiel",
+    "emergency": "Urgence"
   }
 }

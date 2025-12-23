@@ -11,12 +11,15 @@ function switchLang(lang: string) {
 
 <template>
   <!-- ================= HEADER ================= -->
-  <header class="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] items-center
-           px-6 md:px-10 py-6 border-b-4 border-embassy bg-white gap-6">
+<header class="grid grid-cols-[auto_1fr_auto] items-center
+       px-10 py-7 mx-2
+       border-b-[3px] border-embassy bg-white
+       max-md:grid-cols-1 max-md:gap-5">
+
 
     <!-- Rwanda -->
-    <div class="text-center">
-      <img src="/rwanda.png" alt="Rwanda Coat of Arms" class="h-16 mx-auto mb-1" />
+    <div class="text-center ml-3 shadow-md">
+      <img src="/rwanda.png" class="h-[170px] mx-auto mb-1" /><br>
       <span class="text-xs font-semibold uppercase tracking-wide text-gray-700">
         {{ t('countries.rwanda') }}
       </span>
@@ -25,43 +28,44 @@ function switchLang(lang: string) {
     <!-- CENTER TITLE BLOCK -->
     <div class="text-center">
 
-      <!-- REPUBLIC NAME -->
-      <div class="uppercase text-sm font-bold tracking-widest mb-1">
+      <!-- REPUBLIC -->
+      <h1 class="text-[22px] font-bold">
         {{ t('republic') }}
-      </div>
+      </h1>
 
-      <!-- NATIONAL MOTTO -->
-      <div class="flex justify-center gap-6 mb-3 text-sm font-semibold text-gray-600">
-        <span class="relative pb-1 after:absolute after:left-1/2 after:-translate-x-1/2
-                     after:bottom-0 after:w-2/3 after:h-[2px]
+      <!-- MOTTO -->
+      <div class="flex justify-center gap-8 mb-4 text-[13px] font-semibold text-gray-600">
+        <span class="relative pb-[6px] after:absolute after:left-1/2 after:-translate-x-1/2
+                     after:bottom-0 after:w-[65%] after:h-[2px]
                      after:bg-gradient-to-r after:from-transparent after:via-embassy after:to-transparent">
           {{ t('motto.people') }}
-        </span>
-        <span class="relative pb-1 after:absolute after:left-1/2 after:-translate-x-1/2
-                     after:bottom-0 after:w-2/3 after:h-[2px]
+        </span>-
+        <span class="relative pb-[6px] after:absolute after:left-1/2 after:-translate-x-1/2
+                     after:bottom-0 after:w-[65%] after:h-[2px]
                      after:bg-gradient-to-r after:from-transparent after:via-embassy after:to-transparent">
           {{ t('motto.goal') }}
-        </span>
-        <span class="relative pb-1 after:absolute after:left-1/2 after:-translate-x-1/2
-                     after:bottom-0 after:w-2/3 after:h-[2px]
+        </span>-
+        <span class="relative pb-[6px] after:absolute after:left-1/2 after:-translate-x-1/2
+                     after:bottom-0 after:w-[65%] after:h-[2px]
                      after:bg-gradient-to-r after:from-transparent after:via-embassy after:to-transparent">
           {{ t('motto.faith') }}
         </span>
       </div>
 
       <!-- EMBASSY NAME -->
-      <h1 class="text-xl font-bold">
+      <h1 class="text-[22px] font-bold">
         {{ t('hero_title') }}
       </h1>
-      <p class="text-sm text-gray-600 mt-1 mb-3">
+      <p class="text-[15px] text-gray-600 mt-[6px] mb-[14px]">
         {{ t('hero_subtitle') }}
       </p>
 
-      <!-- TOP INFO BAR -->
-      <div class="grid grid-cols-1 md:grid-cols-3 items-center text-sm mt-2 gap-2">
+      <!-- TOP BAR -->
+      <div class="grid grid-cols-[1fr_auto_1fr] items-center text-[13px] mt-[10px]
+               max-md:grid-cols-1 max-md:gap-2 max-md:text-center">
 
         <!-- LEFT -->
-        <div class="md:text-left text-center">
+        <div class="text-left max-md:text-center">
           <a href="#contact" class="font-medium text-gray-700">
             {{ t('topbar.contact') }}
           </a>
@@ -74,22 +78,22 @@ function switchLang(lang: string) {
         <!-- CENTER -->
         <div class="text-center">
           <button @click="switchLang('fr')" :class="locale === 'fr'
-            ? 'bg-embassy text-white px-2 py-1 text-xs font-semibold'
+            ? 'bg-embassy text-white border border-embassy px-2 py-1 text-xs font-semibold'
             : 'border px-2 py-1 text-xs font-semibold'">
             FR
           </button>
           <button @click="switchLang('en')" :class="locale === 'en'
-            ? 'bg-embassy text-white px-2 py-1 text-xs font-semibold ml-1'
+            ? 'bg-embassy text-white border border-embassy px-2 py-1 text-xs font-semibold ml-1'
             : 'border px-2 py-1 text-xs font-semibold ml-1'">
             EN
           </button>
         </div>
 
         <!-- RIGHT -->
-        <div class="md:text-right text-center space-x-3 font-semibold text-embassy">
-          <a href="#" aria-label="Facebook">Fb</a>
-          <a href="#" aria-label="X">X</a>
-          <a href="#" aria-label="LinkedIn">In</a>
+        <div class="text-right max-md:text-center space-x-3 font-semibold text-embassy">
+          <a href="#">Fb</a>
+          <a href="#">X</a>
+          <a href="#">In</a>
         </div>
 
       </div>
@@ -97,7 +101,7 @@ function switchLang(lang: string) {
 
     <!-- Senegal -->
     <div class="text-center">
-      <img src="/senegal.png" alt="Senegal Coat of Arms" class="h-16 mx-auto mb-1" />
+      <img src="/senegal.png" class="h-[170px] mx-auto mb-1" /><br>
       <span class="text-xs font-semibold uppercase tracking-wide text-gray-700">
         {{ t('countries.senegal') }}
       </span>
@@ -105,19 +109,19 @@ function switchLang(lang: string) {
 
   </header>
 
-  <!-- ================= HERO SPLIT ================= -->
+  <!-- HERO -->
   <HeroSplit />
 
-  <!-- ================= SERVICES ================= -->
-  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 md:px-10 py-12">
-    <div v-for="key in ['consular', 'visa', 'passport', 'appointment']" :key="key" class="bg-white border rounded-lg p-8 text-center font-semibold
-             hover:shadow-2xl hover:-translate-y-1 transition">
+  <!-- SERVICES -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-10 py-12">
+    <div v-for="key in ['consular', 'visa', 'passport', 'appointment']" :key="key" class="p-[30px] text-center font-semibold border rounded-lg bg-white
+             hover:shadow-xl hover:-translate-y-[2px] transition">
       {{ t(`services.${key}`) }}
     </div>
   </section>
 
-  <!-- ================= AMBASSADOR ================= -->
-  <section class="bg-gray-50 px-6 md:px-10 py-12">
+  <!-- AMBASSADOR -->
+  <section class="bg-gray-50 px-10 py-12">
     <h2 class="text-lg font-bold mb-3">
       {{ t('ambassador_title') }}
     </h2>
@@ -125,9 +129,4 @@ function switchLang(lang: string) {
       {{ t('ambassador_message') }}
     </p>
   </section>
-
-  <!-- TAILWIND TEST (REMOVE LATER) -->
-  <div class="bg-embassy text-white p-4 text-center">
-    Tailwind is ACTIVE
-  </div>
 </template>

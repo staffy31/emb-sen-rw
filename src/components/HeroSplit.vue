@@ -22,41 +22,50 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- HERO SECTION -->
+  <!-- ================= HERO SECTION ================= -->
   <section
     class="grid grid-cols-1 md:grid-cols-2 min-h-[70vh]"
   >
 
-    <!-- LEFT: TEXT -->
+    <!-- LEFT: TEXT (CSS-equivalent) -->
     <div
-      class="flex flex-col justify-center px-10 md:px-16 py-12"
+      class="flex flex-col justify-center
+             p-[60px]
+             max-md:p-[40px]"
     >
-      <h2 class="text-2xl md:text-3xl font-semibold mb-5">
+      <h2
+        class="text-[28px] font-semibold mb-[18px]"
+      >
         {{ t('hero_section.title') }}
       </h2>
 
       <p
-        class="text-lg leading-relaxed max-w-xl mb-8 text-gray-700"
+        class="text-[18px] leading-[1.6] max-w-[520px] mb-[30px] text-gray-700"
       >
         {{ t('hero_section.description') }}
       </p>
 
-      <div class="flex gap-4">
+      <div class="flex gap-[14px]">
         <button
-          class="bg-embassy text-white px-5 py-3 font-semibold hover:opacity-90 transition"
+          class="bg-embassy text-white px-[18px] py-[12px]
+                 font-semibold cursor-pointer
+                 hover:opacity-90 transition"
         >
           {{ t('hero_section.services') }}
         </button>
 
         <button
-          class="border border-embassy text-embassy px-5 py-3 font-semibold hover:bg-embassy hover:text-white transition"
+          class="border border-embassy text-embassy
+                 px-[18px] py-[12px]
+                 font-semibold cursor-pointer
+                 hover:bg-embassy hover:text-white transition"
         >
           {{ t('hero_section.contact') }}
         </button>
       </div>
     </div>
 
-    <!-- RIGHT: IMAGE SLIDER -->
+    <!-- RIGHT: IMAGE SLIDER (CSS-equivalent) -->
     <div class="w-full h-full">
       <img
         :src="images[current]"
@@ -66,9 +75,4 @@ onMounted(() => {
     </div>
 
   </section>
-
-  <!-- TAILWIND TEST (REMOVE LATER) -->
-  <div class="bg-embassy text-white p-4 text-center">
-    Tailwind is ACTIVE
-  </div>
 </template>

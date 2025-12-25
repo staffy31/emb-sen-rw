@@ -1,9 +1,11 @@
 <template>
-  <div class="min-h-screen bg-sky-200">
-    <Home />
+<div class="min-h-screen bg-linear-to-r
+            from-green-300 via-yellow-200 to-red-300">
+
+    <Navbar />
   </div>
 </template>
 
 <script setup lang="ts">
-import Home from './views/Home.vue';
+import Navbar from './components/Navbar.vue';
 </script>

@@ -28,5 +28,32 @@
     "topbar": {
     "contact": "Contact officiel",
     "emergency": "Urgence"
+  },
+  "menu": {
+    "ambassade": {
+      "title": "Ambassade",
+      "items": [
+        "Coopération bilatérale",
+        "L’Ambassadeur",
+        "Juridiction et Consuls honoraires",
+        "Missions"
+      ]
+    },
+    "consular": {
+      "title": "Affaires consulaires",
+      "items": [
+        "Nos services",
+        "FAQ"
+      ]
+    },
+    "senegal": {
+      "title": "Sénégal",
+      "items": [
+        "Présentation générale",
+        "Visiter le Sénégal",
+        "Investir au Sénégal",
+        "Tourisme au Sénégal"
+      ]
+    }
   }
 }

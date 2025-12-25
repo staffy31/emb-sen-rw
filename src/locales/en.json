@@ -28,5 +28,32 @@
     "topbar": {
     "contact": "Official Contact",
     "emergency": "Emergency"
+  },
+  "menu": {
+    "ambassade": {
+      "title": "Embassy",
+      "items": [
+        "Bilateral Cooperation",
+        "The Ambassador",
+        "Jurisdiction and Honorary Consuls",
+        "Missions"
+      ]
+    },
+    "consular": {
+      "title": "Consular Affairs",
+      "items": [
+        "Our Services",
+        "FAQ"
+      ]
+    },
+    "senegal": {
+      "title": "Senegal",
+      "items": [
+        "General Overview",
+        "Visit Senegal",
+        "Invest in Senegal",
+        "Tourism in Senegal"
+      ]
+    }
   }
 }

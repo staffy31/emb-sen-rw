@@ -8,8 +8,7 @@ function switchLang(lang: string) {
 }
 </script>
 
-<template>
-  <!-- ================= HEADER ================= -->
+<template>  <!-- ================= HEADER ================= -->
   <header class="header">
 
     <!-- Rwanda -->

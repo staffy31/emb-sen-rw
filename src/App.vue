@@ -1,5 +1,7 @@
 <template>
-  <Home />
+  <div class="min-h-screen bg-sky-200">
+    <Home />
+  </div>
 </template>
 
 <script setup lang="ts">

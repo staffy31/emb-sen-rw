@@ -25,7 +25,7 @@
     "services": "Our services",
     "contact": "Contact us"
   },
-    "topbar": {
+  "topbar": {
     "contact": "Official Contact",
     "emergency": "Emergency"
   },
@@ -54,6 +54,23 @@
         "Invest in Senegal",
         "Tourism in Senegal"
       ]
+    },
+    "contact": "Contact",
+    "home": "Home",
+    "gallery": "Gallery"
+  },
+  "officials": {
+    "president": {
+      "name": "H.E. Bassirou Diomaye Diakhar FAYE",
+      "title": "President of the Republic of Senegal"
+    },
+    "minister": {
+      "name": "H.E. Cheikh NIANG",
+      "title": "Minister of African Integration, Foreign Affairs and Senegalese Abroad"
+    },
+    "ambassador": {
+      "name": "H.E. Doudou SOW",
+      "title": "Ambassador of the Republic of Senegal to the Republic of Rwanda"
     }
   }
 }

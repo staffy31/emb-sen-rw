@@ -25,7 +25,7 @@
     "services": "Nos services",
     "contact": "Nous contacter"
   },
-    "topbar": {
+  "topbar": {
     "contact": "Contact officiel",
     "emergency": "Urgence"
   },
@@ -54,6 +54,20 @@
         "Investir au Sénégal",
         "Tourisme au Sénégal"
       ]
+    }
+  },
+  "officials": {
+    "president": {
+      "name": "S.E.M Bassirou Diomaye Diakhar FAYE",
+      "title": "Président de la République du Sénégal"
+    },
+    "minister": {
+      "name": "S.E.M Cheikh NIANG",
+      "title": "Ministre de l’Intégration africaine, des Affaires étrangères et des Sénégalais de l’extérieur"
+    },
+    "ambassador": {
+      "name": "S.E.M. Doudou SOW",
+      "title": "Ambassadeur de la République du Sénégal en République du Rwanda"
     }
   }
 }

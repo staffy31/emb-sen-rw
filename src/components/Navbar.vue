@@ -59,7 +59,7 @@
           <!-- AMBASSADE -->
           <li class="relative group">
             <button class="flex items-center gap-1 hover:text-embassy">
-              {{ t('menu.embassy') }} ▾
+              {{ t('menu.ambassade.title') }} ▾
             </button>
             <ul class="absolute left-0 top-full mt-2 w-64
                        bg-white shadow-lg rounded-lg py-2
@@ -77,7 +77,7 @@
           <!-- CONSULAR -->
           <li class="relative group">
             <button class="flex items-center gap-1 hover:text-embassy">
-              {{ t('menu.consular') }} ▾
+              {{ t('menu.consular.title') }} ▾
             </button>
             <ul class="absolute left-0 top-full mt-2 w-56
                        bg-white shadow-lg rounded-lg py-2
@@ -95,7 +95,7 @@
           <!-- SENEGAL -->
           <li class="relative group">
             <button class="flex items-center gap-1 hover:text-embassy">
-              {{ t('menu.senegal') }} ▾
+              {{ t('menu.senegal.title') }} ▾
             </button>
             <ul class="absolute left-0 top-full mt-2 w-64
                        bg-white shadow-lg rounded-lg py-2
@@ -111,10 +111,17 @@
           </li>
 
           <li>
+            <a href="#gallery" class="hover:text-embassy">
+              {{ t('menu.gallery') }}
+            </a>
+          </li>
+          
+          <li>
             <a href="#contact" class="hover:text-embassy">
               {{ t('menu.contact') }}
             </a>
           </li>
+
 
         </ul>
       </nav>
@@ -257,7 +264,7 @@ const consularMenu = [
 ]
 
 const senegalMenu = [
-  { key: 'presentation', label: 'senegal.presentation', href: '#presentation' },
+  { key: 'presentation', label: 'menu.senegal.presentation', href: '#presentation' },
   { key: 'visit', label: 'senegal.visit', href: '#visit' },
   { key: 'invest', label: 'senegal.invest', href: '#invest' },
   { key: 'tourism', label: 'senegal.tourism', href: '#tourism' },

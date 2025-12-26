@@ -69,5 +69,151 @@
       "name": "S.E.M. Doudou SOW",
       "title": "Ambassadeur de la République du Sénégal en République du Rwanda"
     }
+  },
+  "home": {
+    "title": "Le Mot de l'Ambassadeur !",
+    "greeting": "Cher(s) visiteur(s)",
+    "paragraph1": "Bienvenue sur le site de l'Ambassade du Sénégal au Rwanda, toute l'équipe est heureuse de vous y accueillir !",
+    "paragraph2": "Ouverte au mois de février 2021, l'Ambassade du Sénégal située dans le vibrant quartier de Kimihurura, au cœur de la belle et verte Kigali, est le symbole de l'engagement des plus hautes autorités sénégalaises à entretenir des liens diplomatiques forts et fructueux avec le Rwanda, mais également les autres pays de la juridiction, notamment le Burundi, les Comores, la Tanzanie et les Seychelles.",
+    "paragraph3": "À travers cette plateforme, en plus d'un accès sécurisé aux informations sur les relations bilatérales entre le Sénégal et les pays cités plus haut, vous pourrez bénéficier d'une large gamme de services consulaires (visa d'entrée au Sénégal, état-civil, immatriculation, etc.), découvrir les riches facettes, notamment touristiques, du Pays de la Téranga, tout en ayant le loisir de suivre son actualité politique, économique, sociale, sportive et culturelle.",
+    "paragraph4": "Le site offre également, via des liens utiles, de précieuses informations sur la « Vision Sénégal 2050 » et les opportunités d'investissement dans le pays, ainsi que sur les institutions de la République du Sénégal.",
+    "closing": "Chers visiteurs, ce site étant le vôtre, n'hésitez surtout pas à en explorer les différentes rubriques mais aussi et surtout à nous faire part de vos suggestions en vue d'une meilleure offre de services.",
+    "signature": "Merci pour votre visite ! Jeureujeuf !!!"
+  },
+  "ambassadeur": {
+    "pages": {
+      "0": {
+        "content": [
+          "Le Sénégal et le Rwanda entretiennent des relations politiques dynamiques et amicales...",
+          "C’est dans ce contexte que le Sénégal a décidé, en 2019, d’ouvrir une ambassade à Kigali...",
+          "En sus des rapports étroits sur le plan politique, les deux pays développent également une coopération solide..."
+        ],
+        "images": [
+          {
+            "src": "/pages/cooperation.jpg",
+            "alt": "Relations Sénégal – Rwanda",
+            "caption": "Relations diplomatiques entre le Sénégal et le Rwanda"
+          }
+        ]
+      },
+      "1": {
+        "content": [
+          "Le chef de mission",
+          "S.E.M. Doudou SOW, Ambassadeur du Sénégal au Rwanda",
+          "Sortant de l’Université Cheikh Anta DIOP de Dakar (UCAD) avec une maîtrise en Lettres Modernes en 1992, S.E.M. Doudou SOW a servi dans l’enseignement jusqu’en 2005, année de son admission à l’École nationale d'administration (ENA) – Section Diplomatie.",
+          "Il est ensuite affecté au Ministère des Affaires étrangères, à la Direction Europe, où il occupe le poste de Chef de Division Europe de 2009 à 2010. Il est par la suite affecté à l’Ambassade du Sénégal à Kingston en tant que Deuxième Conseiller de 2010 à 2011, puis Premier Conseiller de 2011 à 2012. De 2012 à 2015, il occupe également le poste de Premier Conseiller à l’Ambassade du Sénégal à Brasilia.",
+          "Entre 2015 et 2016, il devient Conseiller auprès de l’Ambassadeur, Secrétaire général du Ministère des Affaires étrangères et des Sénégalais de l’extérieur, avant d’être affecté à l’Ambassade du Sénégal à Séoul, où il a servi comme Ministre-conseiller de 2018 à 2019.",
+          "Depuis septembre 2019, il est Ambassadeur de la République du Sénégal au Rwanda."
+        ],
+        "images": [
+          {
+            "src": "/pages/ambassador.jpg",
+            "alt": "S.E.M. Doudou SOW",
+            "caption": "S.E.M. Doudou SOW, Ambassadeur du Sénégal au Rwanda"
+          }
+        ]
+      },
+      "2": {
+        "content": [
+          "JURIDICTION",
+          "En plus de la République du Rwanda, la juridiction de l’Ambassade s’étend également au Burundi, à l’Union des Comores, aux Seychelles et à la République unie de Tanzanie.",
+          "CONSULS HONORAIRES"
+        ],
+        "lists": [
+          "En Tanzanie, l'Ambassade est représentée par le Bureau du Consul honoraire, sis à P.O. Box 8693, 520 Haile Selassie Road, Dar es Salaam, Tanzanie. E-mail : consulatsen.tz@gmail.com",
+          "Au Burundi, aux Seychelles et aux Comores, l'Ambassade s'appuie sur les associations de Sénégalais établis dans ces pays."
+        ],
+        "table": {
+          "headers": [
+            "Juridiction",
+            "Siège",
+            "Personne morale",
+            "Contacts"
+          ],
+          "rows": [
+            [
+              "Rwanda",
+              "Avenue 144, Rue 143, Villa 07, Nyamirambo, Kigali, Rwanda",
+              "Malle THIAM",
+              "Tel: +250 790 006 607 | WhatsApp: +250 790 006 607"
+            ],
+            [
+              "Burundi",
+              "Wiza 1ère Avenue, n°41, Bujumbura, Burundi",
+              "Saidou Nourou MBOW",
+              "Tel: +257 686 12 626 | WhatsApp: +221 785 236 500"
+            ],
+            [
+              "Comores",
+              "Moroni, Comores",
+              "Awa DIAGNE",
+              "Tel: +269 411 0101 | WhatsApp: +269 411 0101"
+            ]
+          ]
+        }
+      },
+            "3": {
+        "content": [
+          "Les missions",
+          "Les missions de l’Ambassade du Sénégal, comme partout ailleurs, sont celles de représentation, de protection, de négociation et d’information.",
+          "L’Ambassade du Sénégal au Rwanda assure le suivi de la coopération bilatérale entre les deux pays. Elle représente l’État sénégalais dans toutes les cérémonies et événements officiels organisés dans le pays de résidence. Le Chef de la Mission diplomatique représente le Chef de l’État et l’ensemble des Ministres du Gouvernement sénégalais.",
+          "À ce titre, l’Ambassade assure la protection des intérêts du Sénégal et des Sénégalais, négocie des accords ou tout autre type de coopération avec les autorités rwandaises au nom et pour le compte de l’État du Sénégal. En outre, l’Ambassade du Sénégal au Rwanda assure l’assistance consulaire et la protection des Sénégalais résidant dans le pays d’accueil ainsi que de leurs intérêts. Elle informe sur l’actualité au Rwanda ainsi que sur les opportunités existantes susceptibles d’intéresser le Sénégal.",
+          "Elle promeut également les relations commerciales entre le Rwanda et le Sénégal. À cet effet, elle facilite la mise en relation des hommes d’affaires et des patronats des deux pays. L’Ambassade du Sénégal au Rwanda assure les mêmes fonctions pour les autres pays relevant de sa juridiction."
+        ]
+      }
+    }
+  },
+    "consular": {
+    "pages": {
+      "0": {
+        "content": [
+          "SERVICES CONSULAIRES",
+          "L’Ambassade de la République du Sénégal au Rwanda met à la disposition des citoyens sénégalais résidant ou de passage, ainsi que des usagers, une gamme étendue de services consulaires.",
+          "Nos services incluent notamment :"
+        ],
+        "lists": [
+          "L’accompagnement dans les démarches administratives ;",
+          "La délivrance de visas ;",
+          "La transcription d’état-civil (naissance, mariage, décès, etc.) ;",
+          "La légalisation de documents administratifs ;",
+          "La délivrance de divers autres documents administratifs ;",
+          "L’assistance en cas de situation d’urgence."
+        ],
+        "content_end": [
+          "Pour toute demande ou information complémentaire, n’hésitez pas à nous contacter.",
+          "Nous vous invitons à cliquer sur les images ci-dessous pour consulter les documents requis à envoyer ou à présenter à l’Ambassade."
+        ]
+      }
+    }
+  },  "senegal": {
+    "pages": {
+      "0": {
+        "content": [
+          "PRÉSENTATION GÉNÉRALE",
+          "À PROPOS DU SÉNÉGAL",
+          "Le Sénégal, « Pays de la Téranga » (hospitalité), est situé en Afrique de l’Ouest."
+        ],
+        "lists": [
+          "Nom officiel : République du Sénégal",
+          "Nature du régime : Présidentiel",
+          "Chef de l’État : Son Excellence Monsieur Bassirou Diomaye Diakhar FAYE depuis mars 2024",
+          "Capitale : Dakar",
+          "Fête nationale : 4 avril",
+          "Superficie : 196 722 km²",
+          "Pays limitrophes : Mauritanie, Mali, Guinée Conakry, Guinée-Bissau, Gambie",
+          "Climat : climat tropical avec une saison sèche (novembre à juin) et une saison des pluies (juillet à octobre)",
+          "Végétation : forêt au sud, savane au centre, steppe au nord",
+          "Langue officielle : Français",
+          "Langue courante : Wolof",
+          "Monnaie : Franc CFA",
+          "Population : 18 126 390 habitants (2023)"
+        ],
+        "content_end": [
+          "Drapeau du Sénégal : Le drapeau est composé de trois bandes verticales vertes, jaunes et rouges, avec une étoile verte à cinq branches au centre.",
+          "Sceaux : Le Sénégal possède deux sceaux officiels : le « Sceau du Lion passant » réservé au Président de la République, et le « Sceau du Baobab » utilisé pour les actes de l’administration publique.",
+          "Les armoiries du Sénégal : Elles sont composées d’un lion sur fond rouge, d’un baobab sur fond jaune, et d’une étoile verte à cinq branches au sommet."
+        ]
+      }
+    }
   }
 }

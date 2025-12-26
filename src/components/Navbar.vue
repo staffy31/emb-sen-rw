@@ -169,7 +169,7 @@
         <ul class="bg-white rounded-xl shadow-xl p-6 space-y-4 w-[90%] max-w-md text-left">
 
           <li>
-            <a href="#" @click="closeMenu" class="font-semibold">
+            <a href="@/pages/HomePage.vue" @click="closeMenu" class="font-semibold">
               {{ t('menu.home') }}
             </a>
           </li>

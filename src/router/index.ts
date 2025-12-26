@@ -1,45 +1,50 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MainLayout from '@/layouts/MainLayout.vue'
-
-// Pages
+import HeroLayout from '@/layouts/HeroLayout.vue'
 import HomePage from '@/pages/HomePage.vue'
-import CooperationPage from '@/pages/embassy/CooperationPage.vue'
-import AmbassadorPage from '@/pages/embassy/AmbassadorPage.vue'
-import JurisdictionPage from '@/pages/embassy/JurisdictionPage.vue'
-import MissionsPage from '@/pages/embassy/MissionsPage.vue'
-
-import ConsularServicesPage from '@/pages/consular/ServicesPage.vue'
-import FAQPage from '@/pages/consular/FAQPage.vue'
-
-import SenegalOverviewPage from '@/pages/senegal/OverviewPage.vue'
-import VisitSenegalPage from '@/pages/senegal/VisitPage.vue'
-import InvestSenegalPage from '@/pages/senegal/InvestPage.vue'
-import TourismPage from '@/pages/senegal/TourismPage.vue'
+import GenericPage from '@/pages/GenericPage.vue'
 
 export default createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: '/',
-      component: MainLayout,
+      component: HeroLayout,
       children: [
-        { path: '', component: HomePage },
+        // HOME
+        {
+          path: '',
+          component: HomePage
+        },
 
-        // Embassy
-        { path: 'embassy/cooperation', component: CooperationPage },
-        { path: 'embassy/ambassador', component: AmbassadorPage },
-        { path: 'embassy/jurisdiction', component: JurisdictionPage },
-        { path: 'embassy/missions', component: MissionsPage },
+        // AMBASSADE PAGES
+        {
+          path: 'ambassade/:index',
+          component: GenericPage,
+          props: route => ({
+            section: 'ambassade',
+            index: Number(route.params.index)
+          })
+        },
 
-        // Consular
-        { path: 'consular/services', component: ConsularServicesPage },
-        { path: 'consular/faq', component: FAQPage },
+        // CONSULAR PAGES
+        {
+          path: 'consular/:index',
+          component: GenericPage,
+          props: route => ({
+            section: 'consular',
+            index: Number(route.params.index)
+          })
+        },
 
-        // Senegal
-        { path: 'senegal/overview', component: SenegalOverviewPage },
-        { path: 'senegal/visit', component: VisitSenegalPage },
-        { path: 'senegal/invest', component: InvestSenegalPage },
-        { path: 'senegal/tourism', component: TourismPage },
+        // SENEGAL PAGES
+        {
+          path: 'senegal/:index',
+          component: GenericPage,
+          props: route => ({
+            section: 'senegal',
+            index: Number(route.params.index)
+          })
+        }
       ]
     }
   ]

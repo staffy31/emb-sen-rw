@@ -72,5 +72,152 @@
       "name": "H.E. Doudou SOW",
       "title": "Ambassador of the Republic of Senegal to the Republic of Rwanda"
     }
+  },
+  "home": {
+    "title": "Message from the Ambassador",
+    "greeting": "Dear Visitors,",
+    "paragraph1": "Welcome to the official website of the Embassy of Senegal in Rwanda. The entire team is pleased to welcome you.",
+    "paragraph2": "Opened in February 2021, the Embassy of Senegal, located in the vibrant Kimihurura district in the heart of the beautiful and green city of Kigali, symbolizes the commitment of the highest Senegalese authorities to maintain strong and fruitful diplomatic relations with Rwanda, as well as with other countries under its jurisdiction, notably Burundi, Comoros, Tanzania, and Seychelles.",
+    "paragraph3": "Through this platform, in addition to secure access to information on bilateral relations between Senegal and the aforementioned countries, you will benefit from a wide range of consular services (entry visas to Senegal, civil status services, registration, etc.), discover the rich facets—particularly touristic—of the Land of Teranga, and follow current political, economic, social, sporting, and cultural developments.",
+    "paragraph4": "The website also provides, through useful links, valuable information on the “Senegal Vision 2050” and investment opportunities in the country, as well as on the institutions of the Republic of Senegal.",
+    "closing": "Dear visitors, as this website is yours, please feel free to explore its various sections and, above all, to share your suggestions with us in order to improve the quality of our services.",
+    "signature": "Thank you for your visit! Jeureujeuf!"
+  },
+  "ambassade": {
+    "pages": {
+      "0": {
+        "content": [
+          "Senegal and Rwanda maintain dynamic and friendly political relations...",
+          "In this context, Senegal decided in 2019 to open an embassy in Kigali...",
+          "Beyond political relations, both countries are also strengthening cooperation..."
+        ],
+        "images": [
+          {
+            "src": "/pages/cooperation.jpg",
+            "alt": "Senegal–Rwanda relations",
+            "caption": "Diplomatic cooperation between Senegal and Rwanda"
+          }
+        ]
+      },
+      "1": {
+        "content": [
+          "Head of Mission",
+          "H.E. Doudou SOW, Ambassador of Senegal to Rwanda",
+          "A graduate of Cheikh Anta Diop University of Dakar (UCAD) with a Master’s degree in Modern Literature in 1992, H.E. Doudou SOW served in the education sector until 2005, the year he was admitted to the National School of Administration (ENA), Diplomacy Section.",
+          "He was subsequently assigned to the Ministry of Foreign Affairs, Directorate for Europe, where he served as Head of the Europe Division from 2009 to 2010. He was then posted to the Embassy of Senegal in Kingston as Second Counsellor from 2010 to 2011, and later as First Counsellor from 2011 to 2012. From 2012 to 2015, he also served as First Counsellor at the Embassy of Senegal in Brasília.",
+          "Between 2015 and 2016, he served as Adviser to the Ambassador and Secretary-General of the Ministry of Foreign Affairs and Senegalese Abroad, before being posted to the Embassy of Senegal in Seoul, where he served as Minister-Counsellor from 2018 to 2019.",
+          "Since September 2019, he has been serving as Ambassador of the Republic of Senegal to Rwanda."
+        ],
+        "images": [
+          {
+            "src": "/pages/ambassador.jpg",
+            "alt": "H.E. Doudou SOW",
+            "caption": "H.E. Doudou SOW, Ambassador of Senegal to Rwanda"
+          }
+        ]
+      },
+      "2": {
+        "content": [
+          "JURISDICTION",
+          "In addition to the Republic of Rwanda, the Embassy’s jurisdiction also covers Burundi, the Union of the Comoros, the Seychelles, and the United Republic of Tanzania.",
+          "HONORARY CONSULS"
+        ],
+        "lists": [
+          "In Tanzania, the Embassy is represented by the Office of the Honorary Consul, located at P.O. Box 8693, 520 Haile Selassie Road, Dar es Salaam, Tanzania. Email: consulatsen.tz@gmail.com",
+          "In Burundi, the Seychelles, and the Comoros, the Embassy relies on Senegalese community associations established in these countries."
+        ],
+        "table": {
+          "headers": [
+            "Jurisdiction",
+            "Office address",
+            "Legal representative",
+            "Contacts"
+          ],
+          "rows": [
+            [
+              "Rwanda",
+              "Avenue 144, Rue 143, Villa 07, Nyamirambo, Kigali, Rwanda",
+              "Malle THIAM",
+              "Tel: +250 790 006 607 | WhatsApp: +250 790 006 607"
+            ],
+            [
+              "Burundi",
+              "Wiza 1st Avenue, No. 41, Bujumbura, Burundi",
+              "Saidou Nourou MBOW",
+              "Tel: +257 686 12 626 | WhatsApp: +221 785 236 500"
+            ],
+            [
+              "Comoros",
+              "Moroni, Comoros",
+              "Awa DIAGNE",
+              "Tel: +269 411 0101 | WhatsApp: +269 411 0101"
+            ]
+          ]
+        }
+      },
+      "3": {
+        "content": [
+          "Missions",
+          "The missions of the Embassy of Senegal, as elsewhere, include representation, protection, negotiation, and information.",
+          "The Embassy of Senegal in Rwanda monitors bilateral cooperation between the two countries. It represents the Senegalese State at all official ceremonies and events organized in the host country. The Head of the Diplomatic Mission represents the Head of State and all Ministers of the Senegalese Government.",
+          "In this capacity, the Embassy protects the interests of Senegal and Senegalese nationals, negotiates agreements or other forms of cooperation with Rwandan authorities on behalf of the State of Senegal. Furthermore, the Embassy of Senegal in Rwanda provides consular assistance and protection to Senegalese nationals residing in the host country and safeguards their interests. It also provides information on current developments in Rwanda as well as opportunities that may be of interest to Senegal.",
+          "The Embassy also promotes trade relations between Rwanda and Senegal by facilitating contacts between business communities and employers’ organizations of both countries. The Embassy of Senegal in Rwanda carries out these same functions for the other countries within its jurisdiction."
+        ]
+      }
+    }
+  },
+  "consular": {
+    "pages": {
+      "0": {
+        "content": [
+          "CONSULAR SERVICES",
+          "The Embassy of the Republic of Senegal in Rwanda provides Senegalese citizens residing in or visiting Rwanda, as well as other users, with a wide range of consular services.",
+          "Our services include in particular:"
+        ],
+        "lists": [
+          "Assistance with administrative procedures;",
+          "Issuance of visas;",
+          "Civil status transcription (birth, marriage, death, etc.);",
+          "Legalization of administrative documents;",
+          "Issuance of various other administrative documents;",
+          "Assistance in emergency situations."
+        ],
+        "content_end": [
+          "For any request or additional information, please do not hesitate to contact us.",
+          "We invite you to click on the images below to view the documents required to be sent to or presented at the Embassy."
+        ]
+      }
+    }
+  },
+    "senegal": {
+    "pages": {
+      "0": {
+        "content": [
+          "GENERAL PRESENTATION",
+          "ABOUT SENEGAL",
+          "Senegal, known as the “Land of Teranga” (hospitality), is located in West Africa."
+        ],
+        "lists": [
+          "Official name: Republic of Senegal",
+          "Form of government: Presidential system",
+          "Head of State: His Excellency Mr. Bassirou Diomaye Diakhar FAYE since March 2024",
+          "Capital: Dakar",
+          "National Day: April 4",
+          "Surface area: 196,722 km²",
+          "Bordering countries: Mauritania, Mali, Guinea, Guinea-Bissau, The Gambia",
+          "Climate: tropical climate with a dry season (November to June) and a rainy season (July to October)",
+          "Vegetation: forest in the south, savannah in the center, steppe in the north",
+          "Official language: French",
+          "Common language: Wolof",
+          "Currency: CFA Franc",
+          "Population: 18,126,390 inhabitants (2023)"
+        ],
+        "content_end": [
+          "Flag of Senegal: The national flag consists of three equal vertical stripes—green, yellow, and red—with a green five-pointed star centered on the yellow stripe.",
+          "Seals: Senegal has two official seals: the “Lion Passant Seal” reserved for the President of the Republic, and the “Baobab Seal” used for public administrative acts.",
+          "Coat of Arms of Senegal: The coat of arms features a lion on a red background and a baobab tree on a yellow background, topped by a green five-pointed star."
+        ]
+      }
+    }
   }
 }

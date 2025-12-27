@@ -177,7 +177,7 @@
           <!-- MOBILE ACCORDIONS -->
           <li>
             <button @click="toggle('embassy')" class="font-semibold w-full text-left">
-              {{ t('menu.embassy') }}
+              {{ t('menu.ambassade.title') }}
             </button>
             <ul v-if="open.embassy" class="ml-4 mt-2 space-y-2 text-sm">
               <li v-for="item in embassyMenu" :key="item.key">
@@ -190,7 +190,7 @@
 
           <li>
             <button @click="toggle('consular')" class="font-semibold w-full text-left">
-              {{ t('menu.consular') }}
+              {{ t('menu.consular.title') }}
             </button>
             <ul v-if="open.consular" class="ml-4 mt-2 space-y-2 text-sm">
               <li v-for="item in consularMenu" :key="item.key">
@@ -203,7 +203,7 @@
 
           <li>
             <button @click="toggle('senegal')" class="font-semibold w-full text-left">
-              {{ t('menu.senegal') }}
+              {{ t('menu.senegal.title') }}
             </button>
             <ul v-if="open.senegal" class="ml-4 mt-2 space-y-2 text-sm">
               <li v-for="item in senegalMenu" :key="item.key">

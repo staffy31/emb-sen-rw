@@ -74,14 +74,45 @@
     }
   },
   "home": {
-    "title": "Message from the Ambassador",
-    "greeting": "Dear Visitors,",
-    "paragraph1": "Welcome to the official website of the Embassy of Senegal in Rwanda. The entire team is pleased to welcome you.",
-    "paragraph2": "Opened in February 2021, the Embassy of Senegal, located in the vibrant Kimihurura district in the heart of the beautiful and green city of Kigali, symbolizes the commitment of the highest Senegalese authorities to maintain strong and fruitful diplomatic relations with Rwanda, as well as with other countries under its jurisdiction, notably Burundi, Comoros, Tanzania, and Seychelles.",
-    "paragraph3": "Through this platform, in addition to secure access to information on bilateral relations between Senegal and the aforementioned countries, you will benefit from a wide range of consular services (entry visas to Senegal, civil status services, registration, etc.), discover the rich facets—particularly touristic—of the Land of Teranga, and follow current political, economic, social, sporting, and cultural developments.",
-    "paragraph4": "The website also provides, through useful links, valuable information on the “Senegal Vision 2050” and investment opportunities in the country, as well as on the institutions of the Republic of Senegal.",
-    "closing": "Dear visitors, as this website is yours, please feel free to explore its various sections and, above all, to share your suggestions with us in order to improve the quality of our services.",
-    "signature": "Thank you for your visit! Jeureujeuf!"
+    "title": "Message from the Ambassador!",
+    "greeting": "Dear Visitors",
+    "paragraph1": "Welcome to the official website of the Embassy of Senegal in Rwanda. The entire team is pleased to welcome you!",
+    "paragraph2": "Opened in February 2021, the Embassy of Senegal, located in the vibrant Kimihurura neighborhood at the heart of the beautiful and green city of Kigali, symbolizes the commitment of the highest Senegalese authorities to maintaining strong and fruitful diplomatic relations with Rwanda, as well as other countries under its jurisdiction, including Burundi, Comoros, Tanzania, and Seychelles.",
+    "paragraph3": "Through this platform, in addition to secure access to information on bilateral relations between Senegal and the above-mentioned countries, you will benefit from a wide range of consular services (entry visas to Senegal, civil status, registration, etc.), discover the rich facets—particularly touristic—of the Land of Teranga, while also following its political, economic, social, sports, and cultural news.",
+    "paragraph4": "The website also provides, through useful links, valuable information on “Senegal Vision 2050” and investment opportunities in the country, as well as on the institutions of the Republic of Senegal.",
+    "closing": "Dear visitors, this website is yours. Feel free to explore its various sections and, above all, share your suggestions with us to help improve our services.",
+    "signature": "Thank you for your visit! Jeureujeuf !!!",
+
+    "news": {
+      "badges": {
+        "pinned": "IMPORTANT",
+        "new": "NEW"
+      },
+      "title": "News",
+      "viewMore": "View more",
+      "download": "Download document",
+      "items": [
+        {
+          "category": [
+            "Press Release",
+            "Diaspora"
+          ],
+          "title": "Celebration of the First Edition of the National Diaspora Day",
+          "description": "Call for participation and contributions on the occasion of the National Diaspora Day.",
+          "date": "10 November 2025",
+          "image": "/publish/Premiere-edition-Journee-nationale-de-la-Diaspora-conv-1.png",
+          "file": "/publish/Premiere-edition-Journee-nationale-de-la-Diaspora.pdf"
+        },
+        {
+          "category": [
+            "Press Release"
+          ],
+          "title": "Embassy Closure",
+          "description": "Thursday 25 and Friday 26 December 2025 are declared public holidays in Rwanda. Consequently, the Embassy will be closed on those dates.",
+          "date": "24 December 2025"
+        }
+      ]
+    }
   },
   "ambassade": {
     "pages": {
@@ -189,7 +220,7 @@
       }
     }
   },
-    "senegal": {
+  "senegal": {
     "pages": {
       "0": {
         "content": [

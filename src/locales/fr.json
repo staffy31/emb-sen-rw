@@ -78,7 +78,38 @@
     "paragraph3": "À travers cette plateforme, en plus d'un accès sécurisé aux informations sur les relations bilatérales entre le Sénégal et les pays cités plus haut, vous pourrez bénéficier d'une large gamme de services consulaires (visa d'entrée au Sénégal, état-civil, immatriculation, etc.), découvrir les riches facettes, notamment touristiques, du Pays de la Téranga, tout en ayant le loisir de suivre son actualité politique, économique, sociale, sportive et culturelle.",
     "paragraph4": "Le site offre également, via des liens utiles, de précieuses informations sur la « Vision Sénégal 2050 » et les opportunités d'investissement dans le pays, ainsi que sur les institutions de la République du Sénégal.",
     "closing": "Chers visiteurs, ce site étant le vôtre, n'hésitez surtout pas à en explorer les différentes rubriques mais aussi et surtout à nous faire part de vos suggestions en vue d'une meilleure offre de services.",
-    "signature": "Merci pour votre visite ! Jeureujeuf !!!"
+    "signature": "Merci pour votre visite ! Jeureujeuf !!!",
+    "news": {
+      "badges": {
+        "pinned": "IMPORTANT",
+        "new": "NOUVEAU"
+      },
+      "title": "Actualités & Informations",
+      "items": [
+        {
+          "category": [
+            "Communiqué",
+            "Diaspora"
+          ],
+          "title": "Célébration de la première édition de la Journée nationale de la Diaspora",
+          "description": "Appel à participation et contributions à l’occasion de la Journée nationale de la Diaspora.",
+          "date": "10 novembre 2025",
+          "dateISO": "2025-11-10",
+          "image": "/publish/Premiere-edition-Journee-nationale-de-la-Diaspora-conv-1.png",
+          "file": "/publish/Premiere-edition-Journee-nationale-de-la-Diaspora.pdf",
+          "pinned": true
+        },
+        {
+          "category": [
+            "Communiqué"
+          ],
+          "title": "Fermeture de l’Ambassade",
+          "description": "Les jeudi 25 et vendredi 26 décembre 2025 sont déclarés fériés au Rwanda, par conséquent, l’Ambassade sera fermée à ces dates.",
+          "date": "24 décembre 2025",
+          "dateISO": "2025-12-24"
+        }
+      ]
+    }
   },
   "ambassadeur": {
     "pages": {
@@ -152,7 +183,7 @@
           ]
         }
       },
-            "3": {
+      "3": {
         "content": [
           "Les missions",
           "Les missions de l’Ambassade du Sénégal, comme partout ailleurs, sont celles de représentation, de protection, de négociation et d’information.",
@@ -163,7 +194,7 @@
       }
     }
   },
-    "consular": {
+  "consular": {
     "pages": {
       "0": {
         "content": [
@@ -185,7 +216,8 @@
         ]
       }
     }
-  },  "senegal": {
+  },
+  "senegal": {
     "pages": {
       "0": {
         "content": [

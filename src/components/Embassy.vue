@@ -1,80 +1,131 @@
 <template>
-    <section class="  overflow-hidden hover:shadow-lg transition bg-gray-100/90 h-auto p-2">
-        Embassy Component
+  <section class="w-full py-14 bg-slate-50">
+    <!-- Title -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">
+      {{ lang === 'fr' ? 'Découvrir le Sénégal' : 'Discover Senegal' }}
+    </h2>
 
+    <!-- Language Switch -->
+    <div class="flex justify-center mb-6">
+      <button
+        class="px-4 py-2 mx-1 rounded-lg border text-sm font-medium"
+        :class="lang === 'en' ? 'bg-green-600 text-white' : 'bg-white'"
+        @click="lang = 'en'"
+      >
+        EN
+      </button>
+      <button
+        class="px-4 py-2 mx-1 rounded-lg border text-sm font-medium"
+        :class="lang === 'fr' ? 'bg-green-600 text-white' : 'bg-white'"
+        @click="lang = 'fr'"
+      >
+        FR
+      </button>
+    </div>
 
-<div class="grid-cols-1 sm:grid md:grid-cols-3 ">
-  <div
-    class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-gray-900 sm:shrink-0 sm:grow sm:basis-0">
-    <a href="#!">
+    <!-- Swiper -->
+    <Swiper
+      :modules="modules"
+      effect="coverflow"
+      grabCursor
+      centeredSlides
+      slidesPerView="auto"
+      :autoplay="{
+        delay: 8000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      }"
+      :coverflowEffect="{
+        rotate: 35,
+        stretch: 0,
+        depth: 180,
+        modifier: 1,
+        slideShadows: true
+      }"
+      :pagination="{ clickable: true }"
+      class="max-w-6xl mx-auto"
+    >
+      <SwiperSlide
+        v-for="(slide, index) in slides"
+        :key="index"
+        class="w-[260px] sm:w-[300px] md:w-[340px]"
+      >
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden
+                 transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            :src="slide.image"
+            class="w-full h-60 object-cover"
+            alt=""
+          />
 
-            <img class="object-cover w-full rounded-base h-64 md:h-95 md:w-full mb-4 md:mb-0"
-                src="/hero/HE_ambassador.png" alt="">
-    </a>
-    <div class="p-6">
-      <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
-      <p class="mb-4 text-base">
-        This is a wider card with supporting text below as a natural
-        lead-in to additional content. This content is a little bit
-        longer.
-      </p>
-    </div>
-    <div
-      class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-surface/75 dark:border-white/10 dark:text-neutral-300">
-      <small>Last updated 3 mins ago</small>
-    </div>
-  </div>
-
-  <div
-    class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
-    <a href="#!">
-      <img
-        class="rounded-t-lg"
-        src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
-        alt="Los Angeles Skyscrapers" />
-    </a>
-    <div class="p-6">
-      <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
-      <p class="mb-4 text-base">
-        This card has supporting text below as a natural lead-in to
-        additional content.
-      </p>
-    </div>
-    <div
-      class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-surface/75 dark:border-white/10 dark:text-neutral-300">
-      <small>Last updated 3 mins ago</small>
-    </div>
-  </div>
-
-  <div
-    class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
-    <a href="#!">
-      <img
-        class="rounded-t-lg"
-        src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
-        alt="Palm Springs Road" />
-    </a>
-    <div class="p-6">
-      <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
-      <p class="mb-4 text-base">
-        This is a wider card with supporting text below as a natural
-        lead-in to additional content. This card has even longer content
-        than the first to show that equal height action.
-      </p>
-    </div>
-    <div
-      class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-surface/75 dark:border-white/10 dark:text-neutral-300">
-      <small>Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div>
-    </section>
+          <div class="p-4 text-center">
+            <h3 class="font-semibold text-lg">
+              {{ slide.title[lang] }}
+            </h3>
+            <p class="text-sm text-gray-600">
+              {{ slide.subtitle[lang] }}
+            </p>
+          </div>
+        </div>
+      </SwiperSlide>
+    </Swiper>
+  </section>
 </template>
 
-<script>
-export default {
+<script setup>
+import { ref } from 'vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules'
 
-}
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'
+
+const modules = [EffectCoverflow, Pagination, Autoplay]
+
+const lang = ref('en')
+
+const slides = [
+  {
+    title: { en: 'Dakar', fr: 'Dakar' },
+    subtitle: {
+      en: 'Capital city of Senegal',
+      fr: 'Capitale du Sénégal'
+    },
+    image: 'https://images.unsplash.com/photo-1599423300746-b62533397364'
+  },
+  {
+    title: { en: 'Gorée Island', fr: 'Île de Gorée' },
+    subtitle: {
+      en: 'UNESCO World Heritage site',
+      fr: 'Site classé au patrimoine mondial de l’UNESCO'
+    },
+    image: 'https://images.unsplash.com/photo-1615811361523-6bd03d7748e7'
+  },
+  {
+    title: { en: 'Pink Lake', fr: 'Lac Rose' },
+    subtitle: {
+      en: 'Unique natural wonder',
+      fr: 'Merveille naturelle unique'
+    },
+    image: 'https://images.unsplash.com/photo-1602503875133-9d90d30f4c9d'
+  },
+  {
+    title: { en: 'Casamance', fr: 'Casamance' },
+    subtitle: {
+      en: 'Nature and culture',
+      fr: 'Nature et culture'
+    },
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6'
+  }
+]
 </script>
 
-<style></style>
+<style>
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+</style>

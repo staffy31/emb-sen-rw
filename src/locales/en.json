@@ -250,5 +250,40 @@
         ]
       }
     }
+  },
+    "bilateral": {
+    "title": "Senegal – Rwanda Relations",
+    "paragraphs": [
+      "Senegal and Rwanda maintain dynamic and friendly political relations, marked by continuous dialogue between their leaders and regular high-level visits.",
+      "In this context, Senegal decided in 2019 to open an embassy in Kigali with a resident ambassador, following the opening of the Rwandan Embassy in Dakar in 2011.",
+      "Beyond political ties, both countries are developing strong cooperation in cultural and military fields, while exploring new areas such as health, air transport, and the digital economy."
+    ]
+  },
+  "timeline": {
+    "title": "Key Milestones",
+    "items": [
+      {
+        "date": "2011",
+        "event": "Opening of the Embassy of Rwanda in Dakar"
+      },
+      {
+        "date": "2019",
+        "event": "Senegal decides to open an Embassy in Kigali"
+      },
+      {
+        "date": "February 2021",
+        "event": "Official opening of the Embassy of Senegal in Kigali"
+      },
+      {
+        "date": "2024 – present",
+        "event": "Strengthening relations under President H.E. Bassirou Diomaye Diakhar FAYE"
+      }
+    ]
+  },
+  "embassy": {
+    "hours": {
+      "title": "Opening Hours",
+      "value": "Monday – Friday: 09:00 AM – 05:00 PM"
+    }
   }
 }

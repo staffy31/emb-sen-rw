@@ -247,5 +247,40 @@
         ]
       }
     }
+  },
+    "bilateral": {
+    "title": "Relations Sénégal – Rwanda",
+    "paragraphs": [
+      "Le Sénégal et le Rwanda entretiennent des relations politiques dynamiques et amicales, caractérisées par une concertation permanente entre leurs dirigeants ainsi que par la régularité des visites croisées de délégations de haut niveau.",
+      "C’est dans ce contexte que le Sénégal a décidé, en 2019, d’ouvrir une ambassade à Kigali, avec un ambassadeur résident, faisant suite à l’ouverture de l’ambassade du Rwanda à Dakar en 2011.",
+      "En sus des rapports étroits sur le plan politique, les deux pays développent également une coopération solide dans les domaines culturel et militaire, et envisagent de diversifier leurs échanges dans les secteurs de la santé, du transport aérien et de l’économie numérique."
+    ]
+  },
+  "timeline": {
+    "title": "Repères clés",
+    "items": [
+      {
+        "date": "2011",
+        "event": "Ouverture de l’Ambassade du Rwanda à Dakar"
+      },
+      {
+        "date": "2019",
+        "event": "Décision du Sénégal d’ouvrir une Ambassade à Kigali"
+      },
+      {
+        "date": "Février 2021",
+        "event": "Ouverture officielle de l’Ambassade du Sénégal à Kigali"
+      },
+      {
+        "date": "2024 – présent",
+        "event": "Renforcement des relations sous la présidence de S.E.M. Bassirou Diomaye Diakhar FAYE"
+      }
+    ]
+  },
+  "embassy": {
+    "hours": {
+      "title": "Horaires d’ouverture",
+      "value": "Lundi – Vendredi : 09h00 – 17h00"
+    }
   }
 }

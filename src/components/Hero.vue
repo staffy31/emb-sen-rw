@@ -4,7 +4,7 @@
     <div class="relative">
       <!-- Background Image -->
       <div class="absolute inset-0">
-        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop" alt="Background Pattern" />
+        <img class="w-full h-full object-cover" src="/navbar.png" alt="Background Pattern" />
         <div class="absolute inset-0 bg-gradient-to-r from-embassy-green/90 to-embassy-green/70 mix-blend-multiply"></div>
       </div>
 

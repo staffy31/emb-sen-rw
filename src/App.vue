@@ -1,15 +1,30 @@
 <template>
-  <div class="min-h-screen bg-linear-to-r from-green-300 via-yellow-200 to-red-300">
+  <div class="min-h-screen bg-gray-50 flex flex-col font-sans text-gray-900">
     <Navbar />
-    <Hero />
-    <Embassy />
-    <Consular />
-    <Senegal />
-    <Gallery />
-    <Contact />
-    <footer class="bg-gray-800 text-white py-4 h-[400px]">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2024 Embassy of Senegal in Rwanda. All rights reserved.</p>
+    
+    <main class="flex-grow">
+      <router-view />
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+      <div class="container mx-auto px-4 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-left">
+           <div>
+              <h4 class="font-bold text-lg mb-4 text-embassy-yellow">Ambassade du Sénégal</h4>
+              <p class="text-sm text-gray-400">Kigali, Rwanda</p>
+           </div>
+           <div>
+              <h4 class="font-bold text-lg mb-4 text-embassy-yellow">Contact</h4>
+              <p class="text-sm text-gray-400">Email: contact@ambasen-kigali.com</p>
+           </div>
+           <div>
+              <h4 class="font-bold text-lg mb-4 text-embassy-yellow">Liens Utiles</h4>
+              <p class="text-sm text-gray-400">Gouvernement du Sénégal</p>
+           </div>
+        </div>
+        <div class="border-t border-slate-800 pt-8">
+          <p class="text-sm text-gray-500">&copy; {{ new Date().getFullYear() }} Embassy of Senegal in Rwanda. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   </div>

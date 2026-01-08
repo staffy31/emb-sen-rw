@@ -1,226 +1,174 @@
 <template>
   <header
-    class="grid grid-cols-[auto_1fr_auto] items-center
-           px-4 sm:px-6 md:px-10 py-4 sm:py-6 md:py-7 mx-1
-           border-b-[3px] border-green-400 bg-sky-50/60
-           rounded-b-lg shadow-sm
-           max-lg:grid-cols-1 max-lg:gap-4 max-lg:text-center">
-
-    <!-- ================= MOBILE MENU BUTTON ================= -->
-    <div class="lg:hidden flex justify-start z-30">
-      <button
-        type="button"
-        class="p-2 rounded-lg bg-blue-800/60 hover:bg-blue-700/60 transition"
-        @click="isMenuOpen = !isMenuOpen">
-
-        <div class="relative w-6 h-6">
-          <span
-            :class="[
-              'absolute left-0 h-0.5 w-6 bg-blue-100 transition-all',
-              isMenuOpen ? 'rotate-45 top-3' : 'top-1'
-            ]" />
-          <span
-            :class="[
-              'absolute left-0 h-0.5 w-6 bg-blue-100 transition-all',
-              isMenuOpen ? 'opacity-0' : 'top-3'
-            ]" />
-          <span
-            :class="[
-              'absolute left-0 h-0.5 w-6 bg-blue-100 transition-all',
-              isMenuOpen ? '-rotate-45 top-3' : 'top-5'
-            ]" />
+    class="sticky top-0 z-50 transition-all duration-300 border-b border-gray-100 dark:border-gray-800"
+    :class="[isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-2' : 'bg-white py-4']">
+    
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- ================= LOGO ================= -->
+        <div class="flex items-center gap-3">
+            <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-embassy-green to-embassy-yellow rounded-full opacity-75 group-hover:opacity-100 transition duration-200 blur-sm"></div>
+                <img src="/rwanda.png" class="relative h-12 w-auto object-contain bg-white rounded-full p-0.5" alt="Coat of Arms Rwanda" />
+            </div>
+            <div class="hidden md:block w-px h-10 bg-gray-200 mx-2"></div>
+            <div class="relative group hidden md:block">
+                <img src="/senegal.png" class="h-12 w-auto object-contain" alt="Coat of Arms Senegal" />
+            </div>
+            <div class="hidden lg:block ml-3">
+                <h1 class="text-lg font-bold text-gray-900 leading-tight">
+                    {{ t('republic') }}
+                </h1>
+                <p class="text-xs text-embassy-green font-medium tracking-wide">
+                     {{ t('hero_subtitle') }}
+                </p>
+            </div>
         </div>
-      </button>
-    </div>
 
-    <!-- ================= RWANDA ================= -->
-    <div class="text-center p-2">
-      <img src="/rwanda.png"
-           class="h-[120px] sm:h-[140px] md:h-[170px] mx-auto mb-1 object-contain" />
-      <span class="text-xs font-semibold uppercase tracking-wide text-gray-700">
-        {{ t('countries.rwanda') }}
-      </span>
-    </div>
-
-    <!-- ================= CENTER ================= -->
-    <div class="text-center px-2 sm:px-4">
-
-      <!-- ================= DESKTOP MENU ================= -->
-      <nav class="hidden lg:flex justify-center shadow-md
-                  mb-4 p-4 border-b border-gray-200 rounded-2xl">
-        <ul class="flex space-x-6 font-semibold text-gray-700">
-
-          <li>
-            <a href="#" class="hover:text-embassy">
-              {{ t('menu.home') }}
-            </a>
-          </li>
+        <!-- ================= DESKTOP MENU ================= -->
+        <nav class="hidden lg:flex items-center space-x-1">
+          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-embassy-green hover:bg-green-50 transition-colors">
+            {{ t('menu.home') }}
+          </a>
 
           <!-- AMBASSADE -->
-          <li class="relative group">
-            <button class="flex items-center gap-1 hover:text-embassy">
-              {{ t('menu.ambassade.title') }} ▾
+          <div class="relative group">
+            <button class="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-embassy-green hover:bg-green-50 transition-colors">
+              {{ t('menu.ambassade.title') }}
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
             </button>
-            <ul class="absolute left-0 top-full mt-2 w-64
-                       bg-white shadow-lg rounded-lg py-2
-                       opacity-0 invisible group-hover:opacity-100
-                       group-hover:visible transition-all">
-              <li v-for="item in embassyMenu" :key="item.key">
-                <a :href="item.href"
-                   class="block px-4 py-2 hover:bg-gray-100">
-                  {{ t(item.label) }}
-                </a>
-              </li>
-            </ul>
-          </li>
+            <div class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right z-50">
+               <div class="rounded-lg shadow-lg ring-1 ring-black/5 bg-white overflow-hidden">
+                  <div class="py-1" role="menu" aria-orientation="vertical">
+                      <a v-for="item in embassyMenu" :key="item.key" :href="item.href"
+                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-embassy-green transition-colors">
+                        {{ t(item.label) }}
+                      </a>
+                  </div>
+               </div>
+            </div>
+          </div>
 
           <!-- CONSULAR -->
-          <li class="relative group">
-            <button class="flex items-center gap-1 hover:text-embassy">
-              {{ t('menu.consular.title') }} ▾
+          <div class="relative group">
+            <button class="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-embassy-green hover:bg-green-50 transition-colors">
+              {{ t('menu.consular.title') }}
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
             </button>
-            <ul class="absolute left-0 top-full mt-2 w-56
-                       bg-white shadow-lg rounded-lg py-2
-                       opacity-0 invisible group-hover:opacity-100
-                       group-hover:visible transition-all">
-              <li v-for="item in consularMenu" :key="item.key">
-                <a :href="item.href"
-                   class="block px-4 py-2 hover:bg-gray-100">
-                  {{ t(item.label) }}
-                </a>
-              </li>
-            </ul>
-          </li>
+            <div class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right z-50">
+               <div class="rounded-lg shadow-lg ring-1 ring-black/5 bg-white overflow-hidden">
+                  <div class="py-1">
+                    <a v-for="item in consularMenu" :key="item.key" :href="item.href"
+                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-embassy-green transition-colors">
+                      {{ t(item.label) }}
+                    </a>
+                  </div>
+               </div>
+            </div>
+          </div>
 
           <!-- SENEGAL -->
-          <li class="relative group">
-            <button class="flex items-center gap-1 hover:text-embassy">
-              {{ t('menu.senegal.title') }} ▾
+          <div class="relative group">
+             <button class="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-embassy-green hover:bg-green-50 transition-colors">
+              {{ t('menu.senegal.title') }}
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
             </button>
-            <ul class="absolute left-0 top-full mt-2 w-64
-                       bg-white shadow-lg rounded-lg py-2
-                       opacity-0 invisible group-hover:opacity-100
-                       group-hover:visible transition-all">
-              <li v-for="item in senegalMenu" :key="item.key">
-                <a :href="item.href"
-                   class="block px-4 py-2 hover:bg-gray-100">
-                  {{ t(item.label) }}
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <a href="#gallery" class="hover:text-embassy">
+            <div class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right z-50">
+               <div class="rounded-lg shadow-lg ring-1 ring-black/5 bg-white overflow-hidden">
+                  <div class="py-1">
+                    <a v-for="item in senegalMenu" :key="item.key" :href="item.href"
+                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-embassy-green transition-colors">
+                      {{ t(item.label) }}
+                    </a>
+                  </div>
+               </div>
+            </div>
+          </div>
+          
+           <a href="#gallery" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-embassy-green hover:bg-green-50 transition-colors">
               {{ t('menu.gallery') }}
             </a>
-          </li>
-          
-          <li>
-            <a href="#contact" class="hover:text-embassy">
+            
+             <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-embassy-green hover:bg-green-50 transition-colors">
               {{ t('menu.contact') }}
             </a>
-          </li>
+
+        </nav>
+
+        <!-- ================= RIGHT ACTIONS ================= -->
+        <div class="flex items-center gap-3">
+             <!-- LANGUAGE -->
+            <div class="flex items-center bg-gray-100 rounded-full p-1">
+                <button @click="switchLang('fr')" 
+                    class="px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200"
+                    :class="locale === 'fr' ? 'bg-white text-embassy-green shadow-sm' : 'text-gray-500 hover:text-gray-900'">
+                    FR
+                </button>
+                <button @click="switchLang('en')" 
+                    class="px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200"
+                    :class="locale === 'en' ? 'bg-white text-embassy-green shadow-sm' : 'text-gray-500 hover:text-gray-900'">
+                    EN
+                </button>
+            </div>
+
+             <!-- MOBILE MENU BUTTON -->
+             <button @click="isMenuOpen = !isMenuOpen" class="lg:hidden p-2 rounded-md text-gray-600 hover:text-embassy-green hover:bg-gray-100 focus:outline-none">
+                <svg class="h-6 w-6" v-if="!isMenuOpen" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="h-6 w-6" v-else fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+             </button>
+        </div>
 
 
-        </ul>
-      </nav>
-
-      <!-- TITLES -->
-      <h1 class="text-lg sm:text-xl md:text-[22px] font-bold">
-        {{ t('republic') }}
-      </h1>
-
-      <div class="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-8
-                  mb-4 text-xs sm:text-[13px] font-semibold text-gray-600">
-        <span>{{ t('motto.people') }}</span>•
-        <span>{{ t('motto.goal') }}</span>•
-        <span>{{ t('motto.faith') }}</span>
       </div>
-
-      <h1 class="text-lg sm:text-xl md:text-[22px] font-bold">
-        {{ t('hero_title') }}
-      </h1>
-
-      <p class="text-sm sm:text-[15px] text-gray-600 mt-1 mb-3 px-2">
-        {{ t('hero_subtitle') }}
-      </p>
-
-      <!-- LANGUAGE -->
-      <div class="flex justify-center gap-2">
-        <button @click="switchLang('fr')" :class="langBtn('fr')">FR</button>
-        <button @click="switchLang('en')" :class="langBtn('en')">EN</button>
-      </div>
-    </div>
-
-    <!-- ================= SENEGAL ================= -->
-    <div class="text-center p-2">
-      <img src="/senegal.png"
-           class="h-[120px] sm:h-[140px] md:h-[170px] mx-auto mb-1 object-contain" />
-      <span class="text-xs font-semibold uppercase tracking-wide text-gray-700">
-        {{ t('countries.senegal') }}
-      </span>
     </div>
 
     <!-- ================= MOBILE MENU OVERLAY ================= -->
-    <transition name="fade">
-      <div v-if="isMenuOpen"
-           class="fixed inset-0 bg-black/70 z-20 flex items-center justify-center lg:hidden">
-        <ul class="bg-white rounded-xl shadow-xl p-6 space-y-4 w-[90%] max-w-md text-left">
+    <transition
+      enter-active-class="transition duration-200 ease-out"
+      enter-from-class="transform -translate-y-2 opacity-0"
+      enter-to-class="transform translate-y-0 opacity-100"
+      leave-active-class="transition duration-150 ease-in"
+      leave-from-class="transform translate-y-0 opacity-100"
+      leave-to-class="transform -translate-y-2 opacity-0"
+    >
+      <div v-if="isMenuOpen" class="lg:hidden bg-white border-b border-gray-100 shadow-lg max-h-[80vh] overflow-y-auto">
+        <div class="px-4 pt-2 pb-6 space-y-1">
+             <a href="#" @click="closeMenu" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-embassy-green hover:bg-green-50">
+               {{ t('menu.home') }}
+             </a>
 
-          <li>
-            <a href="@/pages/HomePage.vue" @click="closeMenu" class="font-semibold">
-              {{ t('menu.home') }}
-            </a>
-          </li>
+             <div class="border-t border-gray-100 my-2 pt-2">
+                 <div class="px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">{{ t('menu.ambassade.title') }}</div>
+                 <a v-for="item in embassyMenu" :key="item.key" :href="item.href" @click="closeMenu" class="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-embassy-green">
+                     {{ t(item.label) }}
+                 </a>
+             </div>
 
-          <!-- MOBILE ACCORDIONS -->
-          <li>
-            <button @click="toggle('embassy')" class="font-semibold w-full text-left">
-              {{ t('menu.ambassade.title') }}
-            </button>
-            <ul v-if="open.embassy" class="ml-4 mt-2 space-y-2 text-sm">
-              <li v-for="item in embassyMenu" :key="item.key">
-                <a :href="item.href" @click="closeMenu">
-                  {{ t(item.label) }}
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <button @click="toggle('consular')" class="font-semibold w-full text-left">
-              {{ t('menu.consular.title') }}
-            </button>
-            <ul v-if="open.consular" class="ml-4 mt-2 space-y-2 text-sm">
-              <li v-for="item in consularMenu" :key="item.key">
-                <a :href="item.href" @click="closeMenu">
-                  {{ t(item.label) }}
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <button @click="toggle('senegal')" class="font-semibold w-full text-left">
-              {{ t('menu.senegal.title') }}
-            </button>
-            <ul v-if="open.senegal" class="ml-4 mt-2 space-y-2 text-sm">
-              <li v-for="item in senegalMenu" :key="item.key">
-                <a :href="item.href" @click="closeMenu">
-                  {{ t(item.label) }}
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <a href="#contact" @click="closeMenu" class="font-semibold">
-              {{ t('menu.contact') }}
-            </a>
-          </li>
-
-        </ul>
+             <div class="border-t border-gray-100 my-2 pt-2">
+                 <div class="px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">{{ t('menu.consular.title') }}</div>
+                 <a v-for="item in consularMenu" :key="item.key" :href="item.href" @click="closeMenu" class="block pl-6 pr-3 py-2 text-sm text-gray-600 hover:text-embassy-green">
+                     {{ t(item.label) }}
+                 </a>
+             </div>
+             
+             <a href="#gallery" @click="closeMenu" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-embassy-green hover:bg-green-50">
+               {{ t('menu.gallery') }}
+             </a>
+             <a href="#contact" @click="closeMenu" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-embassy-green hover:bg-green-50">
+               {{ t('menu.contact') }}
+             </a>
+        </div>
       </div>
     </transition>
 
@@ -228,16 +176,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
 const isMenuOpen = ref(false)
+const isScrolled = ref(false)
 
 const open = ref({
   embassy: false,
   consular: false,
   senegal: false,
+})
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 10;
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
 })
 
 function toggle(section: keyof typeof open.value) {

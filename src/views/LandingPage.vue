@@ -8,6 +8,7 @@
         <Consular id="consular" />
         <Senegal id="senegal" />
         <Gallery id="gallery" />
+        <InfoPage id="news" />
         <Contact id="contact" />
       </div>
     </div>
@@ -21,4 +22,5 @@ import Consular from '@/components/Consular.vue'
 import Senegal from '@/components/Senegal.vue'
 import Gallery from '@/components/Gallery.vue'
 import Contact from '@/components/Contact.vue'
+import InfoPage from '@/pages/InfoPage.vue'
 </script>

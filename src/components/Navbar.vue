@@ -201,10 +201,6 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 })
 
-function toggle(section: keyof typeof open.value) {
-  open.value[section] = !open.value[section]
-}
-
 function closeMenu() {
   isMenuOpen.value = false
   open.value.embassy = false
@@ -233,12 +229,6 @@ const senegalMenu = [
 
 function switchLang(lang: string) {
   locale.value = lang
-}
-
-function langBtn(lang: string) {
-  return locale.value === lang
-    ? 'bg-embassy text-white px-2 py-1 rounded text-xs font-semibold'
-    : 'border px-2 py-1 rounded text-xs font-semibold hover:bg-gray-50'
 }
 </script>
 

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, type RouteLocationNormalized, type NavigationGuardNext } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import LandingPage from '@/views/LandingPage.vue'
 import GenericPage from '@/pages/GenericPage.vue'
 
@@ -37,7 +37,7 @@ export default createRouter({
       })
     }
   ],
-  scrollBehavior(to: any, from: any, savedPosition: any) {
+  scrollBehavior(to: any, _from: any, savedPosition: any) {
     if (to.hash) {
       return {
         el: to.hash,

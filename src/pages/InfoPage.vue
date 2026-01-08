@@ -105,14 +105,15 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
 const showModal = ref(false)
 const selectedNews = ref<any>({})
 
-const newsItems = computed(() =>
-  t('home.news.items', [], { returnObjects: true }) as any[]
-)
+const newsItems = computed(() => {
+  const items = tm('home.news.items');
+  return Array.isArray(items) ? items : []; 
+})
 
 function openModal(item: any) {
   selectedNews.value = item

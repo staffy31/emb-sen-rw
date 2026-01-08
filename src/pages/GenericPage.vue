@@ -83,6 +83,7 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 /**
@@ -95,28 +96,35 @@ const props = defineProps<{
   index: number
 }>()
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
 /* Base translation path */
-const base = `${props.section}.pages.${props.index}`
+const base = computed(() => `${props.section}.pages.${props.index}`)
 
 /* Page title from menu */
 const pageTitle = t(`menu.${props.section}.items[${props.index}]`)
 
-/* Page content (safe defaults) */
-const content =
-  (t(`${base}.content`, {}, { returnObjects: true }) as string[]) || []
+// Text Content (Paragraphs)
+const content = computed(() => {
+  const c = tm(`${base.value}.content`);
+  return Array.isArray(c) ? c : [];
+})
 
-const lists =
-  (t(`${base}.lists`, {}, { returnObjects: true }) as string[]) || []
+// Lists
+const lists = computed(() => {
+  const l = tm(`${base.value}.lists`);
+  return Array.isArray(l) ? l : [];
+})
 
-const table =
-  (t(`${base}.table`, {}, { returnObjects: true }) as
-    | { headers: string[]; rows: string[][] }
-    | null) || null
+// Table
+const table = computed(() => {
+  const tData = tm(`${base.value}.table`);
+  return tData as { headers: string[]; rows: string[][] } | null;
+})
 
-const images =
-  (t(`${base}.images`, {}, { returnObjects: true }) as
-    | { src: string; alt: string; caption?: string }[]
-    | []) || []
+// Images
+const images = computed(() => {
+  const i = tm(`${base.value}.images`);
+  return Array.isArray(i) ? i : [];
+})
 </script>

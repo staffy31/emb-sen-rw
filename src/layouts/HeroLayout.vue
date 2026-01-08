@@ -42,12 +42,10 @@
           <!-- AMBASSADOR -->
           <div class="text-center">
             <div class="mx-auto w-[180px] h-[240px] overflow-hidden rounded-lg bg-gray-100 shadow-sm">
-              <img src="/ambassador.jpeg"
+              <img src="/hero/HE_ambassador.png"
                    :alt="t('officials.ambassador.name')"
                    class="w-full h-full object-cover
-                          object-[50%_20%]
-                          scale-x-[-1]
-                          rotate-[0.5deg]" />
+                          object-center" />
             </div>
             <p class="mt-3 font-semibold text-sm">
               {{ t('officials.ambassador.name') }}

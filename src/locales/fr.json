@@ -54,7 +54,11 @@
         "Investir au Sénégal",
         "Tourisme au Sénégal"
       ]
-    }
+    },
+    "infos": "INFOS.",
+    "contact": "Contact",
+    "home": "Accueil",
+    "gallery": "Galerie"
   },
   "officials": {
     "president": {
@@ -248,7 +252,7 @@
       }
     }
   },
-    "bilateral": {
+  "bilateral": {
     "title": "Relations Sénégal – Rwanda",
     "paragraphs": [
       "Le Sénégal et le Rwanda entretiennent des relations politiques dynamiques et amicales, caractérisées par une concertation permanente entre leurs dirigeants ainsi que par la régularité des visites croisées de délégations de haut niveau.",

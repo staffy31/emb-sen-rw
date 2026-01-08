@@ -55,6 +55,7 @@
         "Tourism in Senegal"
       ]
     },
+    "infos": "News",
     "contact": "Contact",
     "home": "Home",
     "gallery": "Gallery"
@@ -82,7 +83,6 @@
     "paragraph4": "The website also provides, through useful links, valuable information on “Senegal Vision 2050” and investment opportunities in the country, as well as on the institutions of the Republic of Senegal.",
     "closing": "Dear visitors, this website is yours. Feel free to explore its various sections and, above all, share your suggestions with us to help improve our services.",
     "signature": "Thank you for your visit! Jeureujeuf !!!",
-
     "news": {
       "badges": {
         "pinned": "IMPORTANT",
@@ -251,7 +251,7 @@
       }
     }
   },
-    "bilateral": {
+  "bilateral": {
     "title": "Senegal – Rwanda Relations",
     "paragraphs": [
       "Senegal and Rwanda maintain dynamic and friendly political relations, marked by continuous dialogue between their leaders and regular high-level visits.",

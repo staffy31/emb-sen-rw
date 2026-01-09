@@ -8,41 +8,21 @@
         {{ t('hero_section.title') }}
       </h2>
 
-      <Swiper
-        :modules="modules"
-        effect="coverflow"
-        grabCursor
-        centeredSlides
-        slidesPerView="auto"
-        :autoplay="{
-          delay: 8000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true
-        }"
-        :coverflowEffect="{
-          rotate: 35,
-          stretch: 0,
-          depth: 180,
-          modifier: 1,
-          slideShadows: true
-        }"
-        :pagination="{ clickable: true }"
-        class="max-w-6xl mx-auto"
-      >
-        <SwiperSlide
-          v-for="(slide, index) in slides"
-          :key="index"
-          class="w-[260px] sm:w-[300px] md:w-[340px]"
-        >
-          <div
-            class="bg-white rounded-2xl shadow-lg overflow-hidden
-                   transition-transform duration-300 hover:scale-105"
-          >
-            <img
-              :src="slide.image"
-              class="w-full h-60 object-cover"
-              alt=""
-            />
+      <Swiper :modules="modules" effect="coverflow" grabCursor centeredSlides loop slidesPerView="auto" :autoplay="{
+        delay: 8000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      }" :coverflowEffect="{
+        rotate: 35,
+        stretch: 0,
+        depth: 180,
+        modifier: 1,
+        slideShadows: true
+      }" :pagination="{ clickable: true }" class="max-w-6xl mx-auto">
+        <SwiperSlide v-for="(slide, index) in slides" :key="index" class="w-[260px] sm:w-[300px] md:w-[340px]">
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden
+                   transition-transform duration-300 hover:scale-105">
+            <img :src="slide.image" class="w-full h-60 object-cover" alt="" />
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">
                 {{ t(slide.title) }}
@@ -62,11 +42,8 @@
         {{ t('bilateral.title') }}
       </h3>
 
-      <p
-        v-for="(p, i) in t('bilateral.paragraphs', {}, { returnObjects: true })"
-        :key="i"
-        class="text-gray-700 leading-relaxed mb-4 text-justify"
-      >
+      <p v-for="(p, i) in t('bilateral.paragraphs', {}, { returnObjects: true })" :key="i"
+        class="text-gray-700 leading-relaxed mb-4 text-justify">
         {{ p }}
       </p>
     </div>
@@ -78,11 +55,8 @@
       </h3>
 
       <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-6">
-        <div
-          v-for="(item, i) in t('timeline.items', {}, { returnObjects: true })"
-          :key="i"
-          class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-green-600"
-        >
+        <div v-for="(item, i) in t('timeline.items', {}, { returnObjects: true })" :key="i"
+          class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-green-600">
           <div class="text-green-700 font-bold text-lg mb-2">
             {{ item.date }}
           </div>
@@ -124,24 +98,39 @@ const modules = [EffectCoverflow, Pagination, Autoplay]
  */
 const slides = [
   {
-    title: 'senegal.pages.0.content.1',
-    subtitle: 'hero_section.description',
-    image: 'https://images.unsplash.com/photo-1599423300746-b62533397364'
+    title: 'bilateral.title',
+    subtitle: '',
+    image: '/pages/bilateral.jpg'
   },
   {
-    title: 'menu.senegal.items.0',
-    subtitle: 'menu.senegal.items.1',
-    image: 'https://images.unsplash.com/photo-1615811361523-6bd03d7748e7'
+    title: 'bilateral.title',
+    subtitle: '',
+    image: '/pages/both_president1.jpg'
   },
   {
-    title: 'menu.senegal.items.2',
-    subtitle: 'menu.senegal.items.3',
-    image: 'https://images.unsplash.com/photo-1602503875133-9d90d30f4c9d'
+    title: 'bilateral.title',
+    subtitle: '',
+    image: '/pages/both_president2.jpg'
   },
   {
-    title: 'countries.senegal',
-    subtitle: 'countries.rwanda',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6'
+    title: 'bilateral.title',
+    subtitle: '',
+    image: '/pages/both_president3.jpeg'
+  },
+  {
+    title: 'bilateral.title',
+    subtitle: '',
+    image: '/pages/both_president4.jpg'
+  },
+  {
+    title: 'bilateral.title',
+    subtitle: '',
+    image: '/pages/both_president5.webp'
+  },
+  {
+    title: 'bilateral.title',
+    subtitle: '',
+    image: '/pages/SIGNING_BASA.jpeg'
   }
 ]
 </script>

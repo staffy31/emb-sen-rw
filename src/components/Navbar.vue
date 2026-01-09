@@ -11,13 +11,12 @@
             <div
               class="absolute -inset-0.5 bg-gradient-to-r from-embassy-green to-embassy-yellow rounded-full opacity-75 group-hover:opacity-100 transition duration-200 blur-sm">
             </div>
-            <img src="/rwanda.png" class="relative h-12 w-auto object-contain bg-white rounded-full p-0.5"
-              alt="Coat of Arms Rwanda" />
+            <!-- <img src="/rwanda.png" class="relative h-12 w-auto object-contain bg-white rounded-full p-0.5" alt="Coat of Arms Rwanda" /> -->
+            <img src="/senegal.png" class="relative h-12 w-auto object-contain bg-white rounded-full p-0.5" alt="Coat of Arms Senegal" />
           </div>
           <div class="hidden md:block w-px h-10 bg-gray-200 mx-2"></div>
-          <div class="relative group hidden md:block">
-            <img src="/senegal.png" class="h-12 w-auto object-contain" alt="Coat of Arms Senegal" />
-          </div>
+          <!-- <div class="relative group hidden md:block">
+          </div> -->
           <div class="hidden lg:block ml-3">
             <h1 class="text-lg font-bold text-gray-900 leading-tight">
               {{ t('republic') }}

@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 bg-white">
+  <section class="py-12 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -10,82 +10,120 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- CARD 1: VISA -->
-        <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-embassy-green rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-          <div>
-            <span class="rounded-lg inline-flex p-3 bg-green-50 text-embassy-green ring-4 ring-white">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-              </svg>
-            </span>
+      <div class="relative">
+        <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${activeSlide * 100}%)` }">
+          <!-- SLIDE 1: VISA -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="relative group bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-green-200 max-w-4xl mx-auto">
+              <div class="flex items-center justify-between mb-6">
+                <span class="rounded-2xl inline-flex p-4 bg-white text-embassy-green shadow-md">
+                  <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                  </svg>
+                </span>
+                <span class="text-green-600 font-semibold text-sm uppercase tracking-wide">Service Visa</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                  {{ t('services.visa') }}
+                </h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Informations sur les demandes de visa, documents requis et procédures pour se rendre au Sénégal.
+                </p>
+                <button class="mt-6 inline-flex items-center px-6 py-3 bg-embassy-green text-white font-medium rounded-xl hover:bg-green-700 transition-colors duration-200">
+                  En savoir plus
+                  <svg class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="mt-4">
-            <h3 class="text-lg font-medium">
-              <a href="#" class="focus:outline-none">
-                <span class="absolute inset-0" aria-hidden="true"></span>
-                {{ t('services.visa') }}
-              </a>
-            </h3>
-            <p class="mt-2 text-sm text-gray-500">
-              Informations sur les demandes de visa, documents requis et procédures pour se rendre au Sénégal.
-            </p>
+
+          <!-- SLIDE 2: PASSPORT -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="relative group bg-gradient-to-br from-yellow-50 to-amber-100 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-yellow-200 max-w-4xl mx-auto">
+              <div class="flex items-center justify-between mb-6">
+                <span class="rounded-2xl inline-flex p-4 bg-white text-yellow-600 shadow-md">
+                  <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+                  </svg>
+                </span>
+                <span class="text-yellow-600 font-semibold text-sm uppercase tracking-wide">Service Passeport</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                  {{ t('services.passport') }}
+                </h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Renouvellement et demande de passeport biométrique CEDEAO. Prise de rendez-vous en ligne.
+                </p>
+                <button class="mt-6 inline-flex items-center px-6 py-3 bg-yellow-600 text-white font-medium rounded-xl hover:bg-yellow-700 transition-colors duration-200">
+                  En savoir plus
+                  <svg class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
-          <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-embassy-green" aria-hidden="true">
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z" />
-            </svg>
-          </span>
+
+          <!-- SLIDE 3: IMMATRICULATION -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="relative group bg-gradient-to-br from-red-50 to-rose-100 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-red-200 max-w-4xl mx-auto">
+              <div class="flex items-center justify-between mb-6">
+                <span class="rounded-2xl inline-flex p-4 bg-white text-red-600 shadow-md">
+                  <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </span>
+                <span class="text-red-600 font-semibold text-sm uppercase tracking-wide">Service Immatriculation</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                  Immatriculation
+                </h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Inscription au registre des Sénégalais de l'extérieur et délivrance de la carte consulaire.
+                </p>
+                <button class="mt-6 inline-flex items-center px-6 py-3 bg-red-600 text-white font-medium rounded-xl hover:bg-red-700 transition-colors duration-200">
+                  En savoir plus
+                  <svg class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- CARD 2: PASSPORT -->
-        <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-embassy-green rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-          <div>
-            <span class="rounded-lg inline-flex p-3 bg-yellow-50 text-yellow-600 ring-4 ring-white">
-               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
-              </svg>
-            </span>
-          </div>
-          <div class="mt-4">
-            <h3 class="text-lg font-medium">
-              <a href="#" class="focus:outline-none">
-                <span class="absolute inset-0" aria-hidden="true"></span>
-                {{ t('services.passport') }}
-              </a>
-            </h3>
-             <p class="mt-2 text-sm text-gray-500">
-              Renouvellement et demande de passeport biométrique CEDEAO. Prise de rendez-vous en ligne.
-            </p>
-          </div>
-        </div>
+        <!-- Navigation Controls -->
+        <button @click="prevSlide" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-200 z-10">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button @click="nextSlide" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-200 z-10">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
 
-        <!-- CARD 3: CARTE CONSULAIRE -->
-        <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-embassy-green rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-          <div>
-            <span class="rounded-lg inline-flex p-3 bg-red-50 text-red-600 ring-4 ring-white">
-               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-          </div>
-          <div class="mt-4">
-            <h3 class="text-lg font-medium">
-              <a href="#" class="focus:outline-none">
-                <span class="absolute inset-0" aria-hidden="true"></span>
-                Immatriculation
-              </a>
-            </h3>
-             <p class="mt-2 text-sm text-gray-500">
-              Inscription au registre des Sénégalais de l'extérieur et délivrance de la carte consulaire.
-            </p>
-          </div>
+        <!-- Dots Indicator -->
+        <div class="flex justify-center mt-8 space-x-2">
+          <button v-for="(slide, index) in 3" :key="index" @click="activeSlide = index" :class="[
+            'w-3 h-3 rounded-full transition-all duration-200',
+            activeSlide === index ? 'bg-embassy-green scale-125' : 'bg-gray-300 hover:bg-gray-400'
+          ]"></button>
         </div>
       </div>
       
-      <div class="mt-10 text-center">
-        <a href="#" class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-embassy-green">
+      <div class="mt-12 text-center">
+        <a href="#" class="inline-flex items-center px-8 py-4 bg-embassy-green text-white font-semibold rounded-xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-embassy-green transition-all duration-200 shadow-lg hover:shadow-xl">
           Voir tous les services consulaires
+          <svg class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
         </a>
       </div>
 
@@ -94,6 +132,36 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+
 const { t } = useI18n()
+const activeSlide = ref(0)
+let autoSlideInterval: NodeJS.Timeout
+
+const nextSlide = () => {
+  activeSlide.value = (activeSlide.value + 1) % 3
+}
+
+const prevSlide = () => {
+  activeSlide.value = activeSlide.value === 0 ? 2 : activeSlide.value - 1
+}
+
+const startAutoSlide = () => {
+  autoSlideInterval = setInterval(nextSlide, 5000)
+}
+
+const stopAutoSlide = () => {
+  if (autoSlideInterval) {
+    clearInterval(autoSlideInterval)
+  }
+}
+
+onMounted(() => {
+  startAutoSlide()
+})
+
+onUnmounted(() => {
+  stopAutoSlide()
+})
 </script>

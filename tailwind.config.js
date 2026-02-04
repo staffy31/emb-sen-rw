@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import typography from '@tailwindcss/typography'
+
 export default {
   content: [
     "./index.html",
@@ -11,7 +13,7 @@ export default {
           green: "#00853F", // Official Senegal Green
           yellow: "#FDEF42", // Official Senegal Yellow
           red: "#E31B23",    // Official Senegal Red
-          DEFAULT: "#00853F" // Keep for backward compatibility
+          DEFAULT: "#00853F"
         },
         gold: {
           50: '#fbf8ea',
@@ -31,5 +33,7 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: [
+    typography
+  ]
 };

@@ -2,40 +2,25 @@
   <!-- Embassy.vue -->
   <section class="w-full bg-slate-50/90">
 
-    <!-- ================= 3D COVERFLOW SLIDER ================= -->
+    <!-- ================= 3D COVERFLOW SLIDER / BILATERAL RELATIONS================= -->
     <div class="py-14 overflow-hidden">
-            <h3 class="text-2xl font-bold text-center mb-6">
+      <h3 class="text-2xl font-bold text-center mb-6">
         {{ t('bilateral.title') }}
       </h3>
 
-      <Swiper
-        :modules="modules"
-        effect="coverflow"
-        :grabCursor="true"
-        :centeredSlides="true"
-        :loop="true"
-        :slidesPerView="'auto'"
-        :autoplay="{
+      <Swiper :modules="modules" effect="coverflow" :grabCursor="true" :centeredSlides="true" :loop="true"
+        :slidesPerView="'auto'" :autoplay="{
           delay: 4000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true
-        }"
-        :speed="800"
-        :coverflowEffect="{
+        }" :speed="800" :coverflowEffect="{
           rotate: 40,
           stretch: 0,
           depth: 200,
           modifier: 1,
           slideShadows: true
-        }"
-        :pagination="{ clickable: true }"
-        class="coverflow-swiper"
-      >
-        <SwiperSlide
-          v-for="(slide, index) in slides"
-          :key="index"
-          class="coverflow-slide"
-        >
+        }" :pagination="{ clickable: true }" class="coverflow-swiper">
+        <SwiperSlide v-for="(slide, index) in slides" :key="index" class="coverflow-slide">
           <div class="coverflow-card">
             <img :src="slide.image" class="coverflow-img" :alt="t(slide.title)" />
             <div class="coverflow-info">
@@ -50,18 +35,19 @@
         </SwiperSlide>
       </Swiper>
 
-
-      <p
-        v-for="(p, i) in t('bilateral.paragraphs', {}, { returnObjects: true })"
-        :key="i"
-        class="text-gray-700 leading-relaxed mb-4 text-justify"
-      >
-        {{ p }}
-      </p>
-    </div>
-
-    <!-- ================= BILATERAL RELATIONS ================= -->
-    <div class="max-w-5xl mx-auto px-6 py-14 bg-white rounded-xl shadow-sm">
+      <div class="max-w-4xl mx-auto px-6 mt-12">
+        <div
+          class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-slate-200/50 hover:shadow-xl transition-all duration-300">
+          <div class="text-slate-700 leading-relaxed text-lg space-y-6">
+            <p v-for="(paragraph, index) in tm('bilateral.paragraphs')" :key="index">
+              {{ paragraph }}
+            </p>
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-green-500/20 via-green-400/40 to-green-500/20 rounded-b-2xl">
+          </div>
+        </div>
+      </div>
 
     </div>
 
@@ -72,11 +58,8 @@
       </h3>
 
       <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-6">
-        <div
-          v-for="(item, i) in t('timeline.items', {}, { returnObjects: true })"
-          :key="i"
-          class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-green-600"
-        >
+        <div v-for="(item, i) in t('timeline.items', {}, { returnObjects: true })" :key="i"
+          class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-green-600">
           <div class="text-green-700 font-bold text-lg mb-2">
             {{ item.date }}
           </div>
@@ -109,7 +92,7 @@ import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
 const modules = [EffectCoverflow, Pagination, Autoplay]
 
@@ -158,7 +141,8 @@ const slides = [
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0 60px; /* extra bottom padding for pagination dots + shadows */
+  padding: 40px 0 60px;
+  /* extra bottom padding for pagination dots + shadows */
 }
 
 /* ─── Each Slide Wrapper ─── */
@@ -236,7 +220,8 @@ const slides = [
 }
 
 .coverflow-swiper .swiper-pagination-bullet-active {
-  background: #16a34a; /* green-600 – matches your timeline accent */
+  background: #16a34a;
+  /* green-600 – matches your timeline accent */
   transform: scale(1.3);
 }
 

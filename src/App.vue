@@ -41,6 +41,7 @@ import Consular from './components/Consular.vue';
 import Senegal from './components/Senegal.vue';
 import Gallery from './components/Gallery.vue';
 import Contact from './components/Contact.vue';
+import Ambassador from './components/Ambassador.vue';
 
 export default {
   name: 'App',
@@ -48,6 +49,7 @@ export default {
     Navbar,
     Hero,
     Embassy,
+    Ambassador,
     Consular,
     Senegal,
     Gallery,

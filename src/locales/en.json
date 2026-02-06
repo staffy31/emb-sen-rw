@@ -285,5 +285,15 @@
       "title": "Opening Hours",
       "value": "Monday – Friday: 09:00 AM – 05:00 PM"
     }
+  },
+  "ambassador_profile": {
+    "title": "The Ambassador",
+    "name": "H.E. Doudou SOW",
+    "biography": [
+      "Graduating from Cheikh Anta DIOP University of Dakar (UCAD) with a Master's degree in Modern Literature in 1992, H.E. Doudou SOW served in education until 2005, when he was admitted to the National School of Administration (ENA) - Diplomacy Section.",
+      "He was then assigned to the Ministry of Foreign Affairs, Europe Directorate, where he held the position of Head of Europe Division from 2009 to 2010. He was subsequently assigned to the Embassy of Senegal in Kingston as Second Counselor from 2010 to 2011, then First Counselor from 2011 to 2012. From 2012 to 2015, he also held the position of First Counselor at the Embassy of Senegal in Brasilia.",
+      "Between 2015 and 2016, he became Advisor to the Ambassador, Secretary General of the Ministry of Foreign Affairs and Senegalese Abroad, before being assigned to the Embassy of Senegal in Seoul, where he served as Minister-Counselor from 2018 to 2019.",
+      "Since September 2019, he has been Ambassador of the Republic of Senegal to Rwanda."
+    ]
   }
 }

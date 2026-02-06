@@ -7,6 +7,7 @@
         <Embassy id="embassy" />
         <Ambassador id="ambassador" />
         <Juridiction id="juridiction" />
+        <Mission id="mission" />
         <Consular id="consular" />
         <Senegal id="senegal" />
         <Gallery id="gallery" />
@@ -22,6 +23,7 @@ import Hero from '@/components/Hero.vue'
 import Embassy from '@/components/Embassy.vue'
 import Ambassador from '@/components/Ambassador.vue'
 import Juridiction from '@/components/Juridiction.vue'
+import Mission from '@/components/Mission.vue'
 import Consular from '@/components/Consular.vue'
 import Senegal from '@/components/Senegal.vue'
 import Gallery from '@/components/Gallery.vue'

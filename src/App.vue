@@ -43,6 +43,7 @@ import Gallery from './components/Gallery.vue';
 import Contact from './components/Contact.vue';
 import Ambassador from './components/Ambassador.vue';
 import Juridiction from './components/Juridiction.vue';
+import Mission from './components/Mission.vue';
 
 export default {
   name: 'App',
@@ -52,6 +53,7 @@ export default {
     Embassy,
     Ambassador,
     Juridiction,
+    Mission,
     Consular,
     Senegal,
     Gallery,

@@ -336,6 +336,35 @@
           }
         ]
       }
+    },
+  "missions": {
+    "badge": "Nos Missions",
+    "title": "Les Missions",
+    "intro": "Les missions de l'Ambassade du Sénégal, comme partout ailleurs, sont celles de",
+    "pillars": {
+      "representation": "représentation",
+      "protection": "protection",
+      "negotiation": "négociation",
+      "information": "information"
+    },
+    "cards": {
+      "representation": {
+        "title": "Représentation & Coopération",
+        "description": "L'Ambassade du Sénégal au Rwanda assure le suivi de la coopération bilatérale entre les deux pays. Elle représente l'État sénégalais dans toutes les cérémonies et évènements officiels organisés dans le pays de résidence. Le chef de la Mission diplomatique représente le Chef de l'État et tous les Ministres du Gouvernement sénégalais."
+      },
+      "protection": {
+        "title": "Protection & Négociation",
+        "description": "L'Ambassade assure la protection des intérêts du Sénégal et des Sénégalais, négocie des accords ou tout autre type de coopération avec les autorités rwandaises au nom et pour le compte de l'État du Sénégal."
+      },
+      "consular": {
+        "title": "Assistance Consulaire",
+        "description": "L'Ambassade du Sénégal au Rwanda assure l'assistance consulaire et la protection des Sénégalais résidant dans le pays d'accueil et de leurs intérêts. Elle informe de l'actualité au Rwanda ainsi que des opportunités qui existent dans le pays et qui pourraient intéresser le Sénégal."
+      },
+      "commercial": {
+        "title": "Relations Commerciales",
+        "description": "Elle promeut les relations commerciales entre le Rwanda et le Sénégal. À cet effet elle entreprend la mise en relation des hommes d'affaires et patronats des deux pays. L'Ambassade du Sénégal au Rwanda assure ces mêmes fonctions pour les autres pays qui composent sa juridiction."
+      }
     }
+  }
 
 }

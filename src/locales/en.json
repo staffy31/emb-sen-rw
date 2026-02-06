@@ -335,5 +335,34 @@
         }
       ]
     }
+  },
+  "missions": {
+    "badge": "Our Missions",
+    "title": "Missions",
+    "intro": "The missions of the Embassy of Senegal, as elsewhere, include",
+    "pillars": {
+      "representation": "representation",
+      "protection": "protection",
+      "negotiation": "negotiation",
+      "information": "information"
+    },
+    "cards": {
+      "representation": {
+        "title": "Representation & Cooperation",
+        "description": "The Embassy of Senegal in Rwanda monitors bilateral cooperation between the two countries. It represents the Senegalese State at all official ceremonies and events organized in the host country. The Head of the Diplomatic Mission represents the Head of State and all Ministers of the Senegalese Government."
+      },
+      "protection": {
+        "title": "Protection & Negotiation",
+        "description": "The Embassy ensures the protection of Senegal's interests and Senegalese nationals, negotiates agreements or any other type of cooperation with Rwandan authorities on behalf of the State of Senegal."
+      },
+      "consular": {
+        "title": "Consular Assistance",
+        "description": "The Embassy of Senegal in Rwanda provides consular assistance and protection to Senegalese nationals residing in the host country and safeguards their interests. It provides information on current developments in Rwanda as well as opportunities that may be of interest to Senegal."
+      },
+      "commercial": {
+        "title": "Commercial Relations",
+        "description": "It promotes trade relations between Rwanda and Senegal. To this end, it facilitates contacts between business communities and employers' organizations of both countries. The Embassy of Senegal in Rwanda carries out these same functions for the other countries within its jurisdiction."
+      }
+    }
   }
 }

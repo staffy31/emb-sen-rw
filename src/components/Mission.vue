@@ -5,15 +5,15 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16" data-aos="fade-up">
-          <span class="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">Nos Missions</span>
-          <h2 class="text-5xl font-bold text-gray-900 mb-4">Les Missions</h2>
+          <span class="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">{{ $t('missions.badge') }}</span>
+          <h2 class="text-5xl font-bold text-gray-900 mb-4">{{ $t('missions.title') }}</h2>
           <div class="w-24 h-1.5 bg-gradient-to-r from-green-600 to-emerald-500 mx-auto rounded-full"></div>
         </div>
 
         <div class="mb-12" data-aos="fade-up">
           <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 border border-gray-100">
             <p class="text-lg text-gray-700 leading-relaxed text-center">
-              Les missions de l'Ambassade du Sénégal, comme partout ailleurs, sont celles de <span class="font-semibold text-green-700">représentation</span>, de <span class="font-semibold text-green-700">protection</span>, de <span class="font-semibold text-green-700">négociation</span> et d'<span class="font-semibold text-green-700">information</span>.
+              {{ $t('missions.intro') }} <span class="font-semibold text-green-700">{{ $t('missions.pillars.representation') }}</span>, de <span class="font-semibold text-green-700">{{ $t('missions.pillars.protection') }}</span>, de <span class="font-semibold text-green-700">{{ $t('missions.pillars.negotiation') }}</span> et d'<span class="font-semibold text-green-700">{{ $t('missions.pillars.information') }}</span>.
             </p>
           </div>
         </div>
@@ -27,9 +27,9 @@
                 </svg>
               </div>
               <div class="flex-1">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Représentation & Coopération</h3>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('missions.cards.representation.title') }}</h3>
                 <p class="text-gray-600 leading-relaxed">
-                  L'Ambassade du Sénégal au Rwanda assure le suivi de la coopération bilatérale entre les deux pays. Elle représente l'État sénégalais dans toutes les cérémonies et évènements officiels organisés dans le pays de résidence. Le chef de la Mission diplomatique représente le Chef de l'État et tous les Ministres du Gouvernement sénégalais.
+                  {{ $t('missions.cards.representation.description') }}
                 </p>
               </div>
             </div>
@@ -43,9 +43,9 @@
                 </svg>
               </div>
               <div class="flex-1">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Protection & Négociation</h3>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('missions.cards.protection.title') }}</h3>
                 <p class="text-gray-600 leading-relaxed">
-                  L'Ambassade assure la protection des intérêts du Sénégal et des Sénégalais, négocie des accords ou tout autre type de coopération avec les autorités rwandaises au nom et pour le compte de l'État du Sénégal.
+                  {{ $t('missions.cards.protection.description') }}
                 </p>
               </div>
             </div>
@@ -60,9 +60,9 @@
                 </svg>
               </div>
               <div class="flex-1">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Assistance Consulaire</h3>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('missions.cards.consular.title') }}</h3>
                 <p class="text-gray-600 leading-relaxed">
-                  L'Ambassade du Sénégal au Rwanda assure l'assistance consulaire et la protection des Sénégalais résidant dans le pays d'accueil et de leurs intérêts. Elle informe de l'actualité au Rwanda ainsi que des opportunités qui existent dans le pays et qui pourraient intéresser le Sénégal.
+                  {{ $t('missions.cards.consular.description') }}
                 </p>
               </div>
             </div>
@@ -77,9 +77,9 @@
                 </svg>
               </div>
               <div class="flex-1">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Relations Commerciales</h3>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('missions.cards.commercial.title') }}</h3>
                 <p class="text-gray-600 leading-relaxed">
-                  Elle promeut les relations commerciales entre le Rwanda et le Sénégal. À cet effet elle entreprend la mise en relation des hommes d'affaires et patronats des deux pays. L'Ambassade du Sénégal au Rwanda assure ces mêmes fonctions pour les autres pays qui composent sa juridiction.
+                  {{ $t('missions.cards.commercial.description') }}
                 </p>
               </div>
             </div>

@@ -365,6 +365,199 @@
         "description": "Elle promeut les relations commerciales entre le Rwanda et le Sénégal. À cet effet elle entreprend la mise en relation des hommes d'affaires et patronats des deux pays. L'Ambassade du Sénégal au Rwanda assure ces mêmes fonctions pour les autres pays qui composent sa juridiction."
       }
     }
+  },
+  "service": {
+    "title": "SERVICES CONSULAIRES",
+    "intro": "L'Ambassade de la République du Sénégal au Rwanda met à la disposition des citoyens sénégalais résidant ou de passage, ainsi qu'aux usagers, une gamme étendue de services consulaires.",
+    "services_title": "Nos services incluent notamment :",
+    "services_list": [
+      "L'accompagnement dans les démarches administratives ;",
+      "La délivrance de visas ;",
+      "la transcription d'état-civil (naissance, mariage, décès, etc.);",
+      "La légalisation de documents administratifs ;",
+      "Divers autres documents administratifs;",
+      "Ainsi que l'assistance en cas de situation d'urgence."
+    ],
+    "contact_text": "Pour toute demande ou information complémentaire, n'hésitez pas à nous contacter.",
+    "invitation_text": "Nous vous invitons à cliquer sur ces images pour consulter les documents requis à envoyer ou à présenter à l'Ambassade",
+    "cards": [
+      "Visa",
+      "Carte Consulaire",
+      "État Civil",
+      "Autres Services"
+    ],
+    "download_btn1": "Code de la famille Sénégalais",
+    "download_btn2": "Loi sur la nationalité Sénégalaise",
+    "coming_soon": "Contenu à venir",
+    "visa": {
+      "conditions": "Conditions relatives aux visas pour courts séjours 90 jours maximum (3 mois), avec un délai de traitement de 72 heures.",
+      "how_to": "Comment effectuer votre demande de visa ?",
+      "present_with": "Se présenter à l'Ambassade munis des documents suivants :",
+      "documents": [
+        "Une demande adressée à l'Ambassadeur du Sénégal ou note verbale pour les détenteurs de passeport diplomatique ou de service;",
+        "Passeport en cours de validité minimum 06 mois;",
+        "Photocopie du passeport;",
+        "Titre de séjour du pays de résidence;",
+        "Réservation billet d'avion;",
+        "Attestation d'hébergement légalisée (si vous allez être hébergé par une personne au Sénégal);",
+        "Photocopie légalisée du passeport ou carte d'identité de la personne qui va vous héberger;",
+        "Réservation d'hôtel;",
+        "Attestation d'activité au Sénégal, ordre de mission, note d'affectation, ou invitation, pré-inscription;",
+        "Vaccination contre la fièvre jaune;",
+        "02 photos;",
+        "Formulaire à télécharger et remplir ici."
+      ],
+      "more_btn": "En savoir plus"
+    },
+    "consular_card": {
+      "intro": "Il est recommandé aux ressortissants sénégalais de procéder à leur immatriculation en vue de la délivrance d'une carte consulaire.",
+      "documents_title": "DOSSIER À FOURNIR :",
+      "documents": [
+        "Demande adressée à l'Ambassadeur du Sénégal;",
+        "Photocopie de la carte nationale d'identité ou passeport;",
+        "03 photos d'identité prise de face;",
+        "Un timbre fiscal de 2000 FCFA (son équivalent en monnaie locale);",
+        "Formulaire d'immatriculation consulaire à télécharger et remplir ici."
+      ],
+      "note_title": "NB:",
+      "notes": [
+        "Le dépôt peut se faire sur place ou par courriel. Cependant, pour le retrait de la carte, la présence est obligatoire afin de procéder à la signature;",
+        "Seuls les compatriotes habitant dans la juridiction de l'Ambassade peuvent y effectuer une demande de carte consulaire."
+      ]
+    },
+    "civil_status": {
+      "intro": "Chers compatriotes, l'Ambassade peut établir vos actes état civil. Pensez à faire enregistrer vos événements familiaux pour garantir leur reconnaissance officielle.",
+      "birth": {
+        "title": "TRANSCRIPTION DE NAISSANCE - Pièces à fournir :",
+        "documents": [
+          "Une demande adressée à l'Ambassadeur du Sénégal;",
+          "Extrait de naissance (rwandais, comorien, burundais, tanzanien, seychellois);",
+          "Photocopie de la Carte Nationale d'Identité ou du Passeport du père;",
+          "Photocopie de la Carte Nationale d'Identité ou du Passeport de la mère;",
+          "Photocopie de la carte consulaire (père, mère, déclarant)."
+        ]
+      },
+      "marriage": {
+        "title": "TRANSCRIPTION DE MARIAGE - Pièces à fournir :",
+        "documents": [
+          "Une demande adressée à l'Ambassadeur du Sénégal;",
+          "Certificat de mariage (rwandais, comorien, burundais, tanzanien, seychellois);",
+          "Photocopie de la Carte Nationale d'Identité ou du Passeport des époux;",
+          "Actes de naissances des époux (l'homme et la femme);",
+          "Photocopie de la carte consulaire (époux, épouse, déclarant)."
+        ]
+      },
+      "marriage_celebration": {
+        "title": "CELEBRATION DE MARIAGE - Documents requis pour chacun des époux :",
+        "documents": [
+          "Certificat de célibat;",
+          "Si l'un des conjoints est divorcé, présenter un certificat de divorce;",
+          "Si l'homme est marié (polygame), présenter un certificat de mariage;",
+          "Photocopie de la carte nationale d'identité des deux témoins;",
+          "Formulaire type à remplir à l'Ambassade;",
+          "Une demande de célébration de mariage adressée à l'Ambassadeur du Sénégal;",
+          "Photocopie du passeport ou de la carte nationale d'identité en cours de validité de chacun des futurs époux;",
+          "Actes de naissances des époux (l'homme et la femme);",
+          "Photocopie de la carte consulaire (époux, épouse, déclarant)."
+        ],
+        "procedure": "Après réception de la demande, la suite de la procédure se déroule de la manière suivante :",
+        "steps": [
+          "Publication de ban pour une durée de 15 jours;",
+          "Les mariés doivent se présenter à l'Ambassade chacun avec deux témoins le jour de la célébration du mariage par l'Ambassadeur."
+        ]
+      },
+      "death": {
+        "title": "TRANSCRIPTION DE DECES - Pièces à fournir :",
+        "documents": [
+          "Une demande adressée à l'Ambassadeur du Sénégal;",
+          "Certificat de décès (rwandais, comorien, burundais, tanzanien, seychellois);",
+          "Photocopie de la carte nationale d'identité ou du passeport du défunt;",
+          "Extrait de naissance du défunt;",
+          "Photocopie de la carte consulaire (défunt, déclarant)."
+        ]
+      },
+      "other_docs": {
+        "title": "AUTRES DOCUMENTS ADMINISTRATIFS",
+        "intro": "Pour la délivrance de l'un des certificats ci-après, les documents requis à envoyer par courrier ou à présenter à l'Ambassade sont:",
+        "requirements": [
+          "Une demande formulée par l'intéressé(e);",
+          "Photocopie de la carte nationale d'identité ou du passeport;",
+          "Photocopie de la carte consulaire;",
+          "Certificat de résidence si besoin."
+        ],
+        "certificates_title": "Les certificats administratifs:",
+        "certificates": [
+          "Certificat de Résidence;",
+          "Certificat de vie individuel;",
+          "Certificat de vie collectif;",
+          "Certificat d'individualité;",
+          "Certificat de célibat;",
+          "Certificat de non divorce et de non remariage et de non séparation de corps;",
+          "Certificat de divorce;",
+          "Certificat de non divorce."
+        ]
+      },
+      "more_btn": "En savoir plus"
+    },
+    "other_services": {
+      "safe_conduct": {
+        "title": "SAUF-CONDUIT / LAISSEZ-PASSER",
+        "intro": "Ce document est délivré aux sénégalais qui ont perdu leur passeport et qui désirent se rendre au Sénégal.",
+        "documents_title": "Pièces à fournir:",
+        "documents": [
+          "Une demande adressée à l'Ambassadeur du Sénégal;",
+          "Photocopie de la carte nationale d'identité ou du passeport;",
+          "Photocopie de la carte consulaire;",
+          "Extrait de naissance pour les mineurs;",
+          "Photocopie du billet ou de la réservation (si possible);",
+          "01 photo d'identité;",
+          "Un timbre fiscal de 2000 FCFA (son équivalent en monnaie locale)."
+        ]
+      },
+      "legalization": {
+        "title": "LEGALISATION DE DOCUMENT - Pièces à fournir:",
+        "documents": [
+          "Une demande adressée à l'Ambassadeur du Sénégal;",
+          "Photocopie de la carte nationale d'identité ou passeport;",
+          "Photocopie de la carte consulaire;",
+          "Les originaux et photocopies des documents (attestation d'authenticité au besoin)."
+        ]
+      },
+      "relocation": {
+        "title": "CERTIFICAT DE DEMENAGEMENT",
+        "intro": "Lors d'un retour définitif au pays, un sénégalais établi à l'étranger peut emporter avec lui tous ses effets et meubles usagés, et bénéficier d'exemptions douanières s'il dispose d'un certificat de déménagement délivré par l'ambassade ou le consulat dont il dépend, sur présentation des documents suivants.",
+        "documents_title": "Pièces à fournir:",
+        "documents": [
+          "Une demande adressée à l'Ambassadeur du Sénégal;",
+          "Photocopie de la carte nationale d'identité ou passeport;",
+          "Photocopie de l'attestation de restitution de la carte consulaire;",
+          "Déclaration sur l'honneur;",
+          "Liste détaillée et quantitative des effets;",
+          "Photocopie du billet ou de la réservation;",
+          "01 photo d'identité;",
+          "01 timbre fiscal de 5000 FCFA (son équivalent en monnaie locale)."
+        ]
+      },
+      "marriage_capacity": {
+        "title": "CERTIFICAT DE COUTUME OU DE CAPACITE DE MARIAGE - Pièces à fournir:",
+        "documents": [
+          "Une demande adressée à l'Ambassadeur du Sénégal;",
+          "Extrait d'acte de Naissance de moins de trois mois, délivré par votre Mairie de Naissance ou Ambassade;",
+          "Certificat de Célibat de moins de trois mois, délivré par votre Mairie de Naissance ou Ambassade, si jamais marié (e) ou Certificat de Non-Remariage de moins de trois mois, délivré par votre Mairie de Naissance ou Ambassade accompagné du jugement de divorce, si divorcé (e), ou Acte de décès du ou de la défunt (e) époux (se) en plus de l'acte du premier mariage, si Veuf (ve);",
+          "Photocopie de la Carte nationale d'Identité ou passeport, en cours de validité;",
+          "Photocopie de la carte consulaire."
+        ]
+      },
+      "family_book": {
+        "title": "LIVRET DE FAMILLE - Pièces à fournir:",
+        "documents": [
+          "Une demande adressée à l'Ambassadeur du Sénégal;",
+          "Photocopie de la carte nationale d'identité ou du passeport;",
+          "Photocopie de la carte consulaire."
+        ]
+      },
+      "more_btn": "En savoir plus"
+    }
   }
 
 }

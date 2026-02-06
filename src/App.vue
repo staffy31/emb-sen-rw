@@ -37,6 +37,7 @@ import Hero from './components/Hero.vue';
 import Navbar from './components/Navbar.vue';
 import {ref, nextTick, onMounted } from 'vue';
 import Embassy from './components/Embassy.vue';
+import Service from './components/Service.vue';
 import Consular from './components/Consular.vue';
 import Senegal from './components/Senegal.vue';
 import Gallery from './components/Gallery.vue';
@@ -55,6 +56,7 @@ export default {
     Juridiction,
     Mission,
     Consular,
+    Service,
     Senegal,
     Gallery,
     Contact

@@ -220,6 +220,199 @@
       }
     }
   },
+  "service": {
+    "title": "CONSULAR SERVICES",
+    "intro": "The Embassy of the Republic of Senegal in Rwanda provides Senegalese citizens residing in or visiting, as well as users, with a wide range of consular services.",
+    "services_title": "Our services include in particular:",
+    "services_list": [
+      "Assistance with administrative procedures;",
+      "Issuance of visas;",
+      "Civil status transcription (birth, marriage, death, etc.);",
+      "Legalization of administrative documents;",
+      "Issuance of various other administrative documents;",
+      "Assistance in emergency situations."
+    ],
+    "contact_text": "For any request or additional information, please do not hesitate to contact us.",
+    "invitation_text": "We invite you to click on these images to view the documents required to be sent to or presented at the Embassy",
+    "cards": [
+      "Visa",
+      "Consular Card",
+      "Civil Status",
+      "Other Services"
+    ],
+    "download_btn1": "Senegalese Family Code",
+    "download_btn2": "Senegalese Nationality Law",
+    "coming_soon": "Content coming soon",
+    "visa": {
+      "conditions": "Conditions for short-stay visas maximum 90 days (3 months), with a processing time of 72 hours.",
+      "how_to": "How to apply for your visa?",
+      "present_with": "Present yourself at the Embassy with the following documents:",
+      "documents": [
+        "A request addressed to the Ambassador of Senegal or verbal note for holders of diplomatic or service passports;",
+        "Valid passport for at least 06 months;",
+        "Photocopy of passport;",
+        "Residence permit of the country of residence;",
+        "Flight ticket reservation;",
+        "Legalized accommodation certificate (if you will be hosted by a person in Senegal);",
+        "Legalized photocopy of the passport or identity card of the person who will host you;",
+        "Hotel reservation;",
+        "Certificate of activity in Senegal, mission order, assignment note, or invitation, pre-registration;",
+        "Yellow fever vaccination;",
+        "02 photos;",
+        "Form to download and fill out here."
+      ],
+      "more_btn": "Learn more"
+    },
+    "consular_card": {
+      "intro": "It is recommended that Senegalese nationals register for the issuance of a consular card.",
+      "documents_title": "DOCUMENTS TO PROVIDE:",
+      "documents": [
+        "Request addressed to the Ambassador of Senegal;",
+        "Photocopy of national identity card or passport;",
+        "03 front-facing identity photos;",
+        "A tax stamp of 2000 FCFA (its equivalent in local currency);",
+        "Consular registration form to download and fill out here."
+      ],
+      "note_title": "NOTE:",
+      "notes": [
+        "The submission can be done on-site or by email. However, for card collection, presence is mandatory to proceed with the signature;",
+        "Only compatriots living in the Embassy's jurisdiction can apply for a consular card."
+      ]
+    },
+    "civil_status": {
+      "intro": "Dear compatriots, the Embassy can establish your civil status documents. Remember to register your family events to ensure their official recognition.",
+      "birth": {
+        "title": "BIRTH TRANSCRIPTION - Documents to provide:",
+        "documents": [
+          "A request addressed to the Ambassador of Senegal;",
+          "Birth certificate (Rwandan, Comorian, Burundian, Tanzanian, Seychellois);",
+          "Photocopy of the father's National Identity Card or Passport;",
+          "Photocopy of the mother's National Identity Card or Passport;",
+          "Photocopy of the consular card (father, mother, declarant)."
+        ]
+      },
+      "marriage": {
+        "title": "MARRIAGE TRANSCRIPTION - Documents to provide:",
+        "documents": [
+          "A request addressed to the Ambassador of Senegal;",
+          "Marriage certificate (Rwandan, Comorian, Burundian, Tanzanian, Seychellois);",
+          "Photocopy of the spouses' National Identity Card or Passport;",
+          "Birth certificates of the spouses (husband and wife);",
+          "Photocopy of the consular card (husband, wife, declarant)."
+        ]
+      },
+      "marriage_celebration": {
+        "title": "MARRIAGE CELEBRATION - Required documents for each spouse:",
+        "documents": [
+          "Certificate of celibacy;",
+          "If one of the spouses is divorced, present a divorce certificate;",
+          "If the man is married (polygamous), present a marriage certificate;",
+          "Photocopy of the national identity card of the two witnesses;",
+          "Standard form to fill out at the Embassy;",
+          "A marriage celebration request addressed to the Ambassador of Senegal;",
+          "Photocopy of the valid passport or national identity card of each future spouse;",
+          "Birth certificates of the spouses (husband and wife);",
+          "Photocopy of the consular card (husband, wife, declarant)."
+        ],
+        "procedure": "After receiving the request, the procedure continues as follows:",
+        "steps": [
+          "Publication of banns for a period of 15 days;",
+          "The couple must present themselves at the Embassy, each with two witnesses, on the day of the marriage celebration by the Ambassador."
+        ]
+      },
+      "death": {
+        "title": "DEATH TRANSCRIPTION - Documents to provide:",
+        "documents": [
+          "A request addressed to the Ambassador of Senegal;",
+          "Death certificate (Rwandan, Comorian, Burundian, Tanzanian, Seychellois);",
+          "Photocopy of the deceased's national identity card or passport;",
+          "Birth certificate of the deceased;",
+          "Photocopy of the consular card (deceased, declarant)."
+        ]
+      },
+      "other_docs": {
+        "title": "OTHER ADMINISTRATIVE DOCUMENTS",
+        "intro": "For the issuance of one of the following certificates, the required documents to send by mail or present at the Embassy are:",
+        "requirements": [
+          "A request made by the interested party;",
+          "Photocopy of the national identity card or passport;",
+          "Photocopy of the consular card;",
+          "Certificate of residence if needed."
+        ],
+        "certificates_title": "Administrative certificates:",
+        "certificates": [
+          "Certificate of Residence;",
+          "Individual life certificate;",
+          "Collective life certificate;",
+          "Certificate of individuality;",
+          "Certificate of celibacy;",
+          "Certificate of non-divorce, non-remarriage and non-separation;",
+          "Divorce certificate;",
+          "Certificate of non-divorce."
+        ]
+      },
+      "more_btn": "Learn more"
+    },
+    "other_services": {
+      "safe_conduct": {
+        "title": "SAFE-CONDUCT / LAISSEZ-PASSER",
+        "intro": "This document is issued to Senegalese who have lost their passport and wish to travel to Senegal.",
+        "documents_title": "Documents to provide:",
+        "documents": [
+          "A request addressed to the Ambassador of Senegal;",
+          "Photocopy of national identity card or passport;",
+          "Photocopy of consular card;",
+          "Birth certificate for minors;",
+          "Photocopy of ticket or reservation (if possible);",
+          "01 identity photo;",
+          "A tax stamp of 2000 FCFA (its equivalent in local currency)."
+        ]
+      },
+      "legalization": {
+        "title": "DOCUMENT LEGALIZATION - Documents to provide:",
+        "documents": [
+          "A request addressed to the Ambassador of Senegal;",
+          "Photocopy of national identity card or passport;",
+          "Photocopy of consular card;",
+          "Originals and photocopies of documents (certificate of authenticity if needed)."
+        ]
+      },
+      "relocation": {
+        "title": "RELOCATION CERTIFICATE",
+        "intro": "Upon definitive return to the country, a Senegalese established abroad can bring all their used belongings and furniture, and benefit from customs exemptions if they have a relocation certificate issued by the embassy or consulate, upon presentation of the following documents.",
+        "documents_title": "Documents to provide:",
+        "documents": [
+          "A request addressed to the Ambassador of Senegal;",
+          "Photocopy of national identity card or passport;",
+          "Photocopy of consular card return certificate;",
+          "Sworn statement;",
+          "Detailed and quantitative list of belongings;",
+          "Photocopy of ticket or reservation;",
+          "01 identity photo;",
+          "01 tax stamp of 5000 FCFA (its equivalent in local currency)."
+        ]
+      },
+      "marriage_capacity": {
+        "title": "CERTIFICATE OF CUSTOM OR MARRIAGE CAPACITY - Documents to provide:",
+        "documents": [
+          "A request addressed to the Ambassador of Senegal;",
+          "Birth certificate less than three months old, issued by your Birth Town Hall or Embassy;",
+          "Certificate of Celibacy less than three months old, issued by your Birth Town Hall or Embassy, if never married or Certificate of Non-Remarriage less than three months old, issued by your Birth Town Hall or Embassy accompanied by divorce judgment, if divorced, or Death certificate of deceased spouse plus first marriage certificate, if widowed;",
+          "Photocopy of valid National Identity Card or passport;",
+          "Photocopy of consular card."
+        ]
+      },
+      "family_book": {
+        "title": "FAMILY BOOK - Documents to provide:",
+        "documents": [
+          "A request addressed to the Ambassador of Senegal;",
+          "Photocopy of national identity card or passport;",
+          "Photocopy of consular card."
+        ]
+      },
+      "more_btn": "Learn more"
+    }
+  },
   "senegal": {
     "pages": {
       "0": {

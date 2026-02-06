@@ -296,6 +296,46 @@
       "Entre 2015 et 2016, il devient Conseiller auprès de l’Ambassadeur, Secrétaire général du Ministère des Affaires étrangères et des Sénégalais de l’extérieur, avant d’être affecté à l’Ambassade du Sénégal à Séoul, où il a servi comme Ministre-conseiller de 2018 à 2019.",
       "Depuis septembre 2019, il est Ambassadeur de la République du Sénégal au Rwanda."
     ]
-  }
+  },
+    "juridiction": {
+      "title": "Juridiction et Consuls honoraires",
+      "jurisdiction_title": "JURIDICTION",
+      "jurisdiction_text": "En plus de la République du Rwanda, la juridiction de l'Ambassade s'étend aussi au Burundi, à l'Union des Comores, aux Seychelles et en République unie de Tanzanie.",
+      "consuls_title": "CONSULS HONORAIRES",
+      "tanzania": "En Tanzanie, l'Ambassade est représentée par le Bureau du Consul honoraire, sis a P.o.box 8693, 520 Haile Selassie Road, Dar es Salaam/Tanzania.",
+      "other_countries": "Au Burundi, aux Seychelles et aux Comores, l'Ambassade s'appuie sur les associations de Sénégalais établis dans ces pays.",
+      "associations_title": "LES ASSOCIATIONS SÉNÉGALAISES DE LA JURIDICTION DE L'AMBASSADE",
+      "table": {
+        "headers": {
+          "jurisdiction": "JURIDICTION",
+          "office": "SIÈGE",
+          "representative": "PERSONNES MORALES",
+          "contacts": "CONTACTS"
+        },
+        "rows": [
+          {
+            "jurisdiction": "RWANDA",
+            "office": "Avenue 144, Rue 143, Villa 07, Nyamirambo, Kigali, Rwanda",
+            "representative": "Malle THIAM",
+            "tel": "Tel: +250790006607",
+            "whatsapp": "WhatsApp: +250790006607"
+          },
+          {
+            "jurisdiction": "BURUNDI",
+            "office": "Wiza 1ère Avenue, n°41, Bujumbura, Burundi",
+            "representative": "Saidou Nourou MBOW",
+            "tel": "Tel: +25768612626",
+            "whatsapp": "WhatsApp: +221785236500"
+          },
+          {
+            "jurisdiction": "COMORES",
+            "office": "Moroni, Comores",
+            "representative": "Awa DIAGNE",
+            "tel": "Tel: +2694110101",
+            "whatsapp": "WhatsApp: +2694110101"
+          }
+        ]
+      }
+    }
 
 }

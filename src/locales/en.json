@@ -295,5 +295,45 @@
       "Between 2015 and 2016, he became Advisor to the Ambassador, Secretary General of the Ministry of Foreign Affairs and Senegalese Abroad, before being assigned to the Embassy of Senegal in Seoul, where he served as Minister-Counselor from 2018 to 2019.",
       "Since September 2019, he has been Ambassador of the Republic of Senegal to Rwanda."
     ]
+  },
+  "juridiction": {
+    "title": "Jurisdiction and Honorary Consuls",
+    "jurisdiction_title": "JURISDICTION",
+    "jurisdiction_text": "In addition to the Republic of Rwanda, the Embassy's jurisdiction also extends to Burundi, the Union of the Comoros, the Seychelles, and the United Republic of Tanzania.",
+    "consuls_title": "HONORARY CONSULS",
+    "tanzania": "In Tanzania, the Embassy is represented by the Office of the Honorary Consul, located at P.O. Box 8693, 520 Haile Selassie Road, Dar es Salaam/Tanzania.",
+    "other_countries": "In Burundi, the Seychelles, and the Comoros, the Embassy relies on Senegalese associations established in these countries.",
+    "associations_title": "SENEGALESE ASSOCIATIONS OF THE EMBASSY'S JURISDICTION",
+    "table": {
+      "headers": {
+        "jurisdiction": "JURISDICTION",
+        "office": "OFFICE",
+        "representative": "LEGAL REPRESENTATIVE",
+        "contacts": "CONTACTS"
+      },
+      "rows": [
+        {
+          "jurisdiction": "RWANDA",
+          "office": "Avenue 144, Rue 143, Villa 07, Nyamirambo, Kigali, Rwanda",
+          "representative": "Malle THIAM",
+          "tel": "Tel: +250790006607",
+          "whatsapp": "WhatsApp: +250790006607"
+        },
+        {
+          "jurisdiction": "BURUNDI",
+          "office": "Wiza 1st Avenue, n°41, Bujumbura, Burundi",
+          "representative": "Saidou Nourou MBOW",
+          "tel": "Tel: +25768612626",
+          "whatsapp": "WhatsApp: +221785236500"
+        },
+        {
+          "jurisdiction": "COMOROS",
+          "office": "Moroni, Comoros",
+          "representative": "Awa DIAGNE",
+          "tel": "Tel: +2694110101",
+          "whatsapp": "WhatsApp: +2694110101"
+        }
+      ]
+    }
   }
 }

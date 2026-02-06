@@ -36,74 +36,82 @@
       </div>
 
       <!-- Cards Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-16 max-w-[1920px] mx-auto">
         <div 
           v-for="(card, index) in $tm('service.cards')" 
           :key="index"
           class="group"
         >
-          <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-green-500">
+          <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-green-500 flex flex-col h-[600px]">
             <!-- Card Header -->
-            <div class="bg-gradient-to-r from-green-600 to-green-700 p-6">
-              <h3 class="text-2xl font-bold text-white text-center">{{ card }}</h3>
+            <div class="bg-gradient-to-r from-green-600 to-green-700 p-4">
+              <h3 class="text-xl font-bold text-white text-center">{{ card }}</h3>
             </div>
             
             <!-- Card Content -->
-            <div class="p-6 h-[480px] overflow-y-auto">
-              <div v-if="index === 0" class="text-sm text-gray-700 space-y-4">
-                <div class="bg-blue-50 p-4 rounded-lg">
-                  <p class="font-semibold text-blue-900">{{ $t('service.visa.conditions') }}</p>
+            <div class="p-4 flex-1 overflow-hidden flex flex-col">
+              <div v-if="index === 0" class="text-sm text-gray-700 space-y-3 flex-1 flex flex-col">
+                <div class="flex-1 overflow-hidden">
+                  <div class="bg-blue-50 p-3 rounded-lg mb-3">
+                    <p class="font-semibold text-blue-900 text-xs">{{ $t('service.visa.conditions') }}</p>
+                  </div>
+                  <p class="font-semibold text-gray-900 text-xs mb-2">{{ $t('service.visa.how_to') }}</p>
+                  <p class="text-gray-700 text-xs mb-2">{{ $t('service.visa.present_with') }}</p>
+                  <ol class="list-decimal pl-4 space-y-1 text-[10px] text-gray-600">
+                    <li v-for="(doc, i) in $tm('service.visa.documents').slice(0, 8)" :key="i" class="leading-relaxed">{{ doc }}</li>
+                  </ol>
                 </div>
-                <p class="font-semibold text-gray-900">{{ $t('service.visa.how_to') }}</p>
-                <p class="text-gray-700">{{ $t('service.visa.present_with') }}</p>
-                <ol class="list-decimal pl-5 space-y-2 text-xs text-gray-600">
-                  <li v-for="(doc, i) in $tm('service.visa.documents')" :key="i" class="leading-relaxed">{{ doc }}</li>
-                </ol>
-                <button class="w-full mt-4 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold shadow-md hover:shadow-lg">
+                <button class="w-full px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold shadow-md hover:shadow-lg text-sm mt-auto">
                   {{ $t('service.visa.more_btn') }}
                 </button>
               </div>
               
-              <div v-else-if="index === 1" class="text-sm text-gray-700 space-y-4">
-                <p class="text-gray-700 leading-relaxed">{{ $t('service.consular_card.intro') }}</p>
-                <p class="font-semibold text-gray-900">{{ $t('service.consular_card.documents_title') }}</p>
-                <ol class="list-decimal pl-5 space-y-2 text-xs text-gray-600">
-                  <li v-for="(doc, i) in $tm('service.consular_card.documents')" :key="i" class="leading-relaxed">{{ doc }}</li>
-                </ol>
-                <div class="bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500">
-                  <p class="font-semibold text-amber-900 mb-2">{{ $t('service.consular_card.note_title') }}</p>
-                  <ul class="space-y-2 text-xs text-amber-800">
-                    <li v-for="(note, i) in $tm('service.consular_card.notes')" :key="i" class="flex items-start gap-2">
-                      <span class="text-amber-600">►</span>
-                      <span>{{ note }}</span>
-                    </li>
-                  </ul>
+              <div v-else-if="index === 1" class="text-sm text-gray-700 space-y-3 flex-1 flex flex-col">
+                <div class="flex-1 overflow-hidden">
+                  <p class="text-gray-700 leading-relaxed text-xs mb-3">{{ $t('service.consular_card.intro') }}</p>
+                  <p class="font-semibold text-gray-900 text-xs mb-2">{{ $t('service.consular_card.documents_title') }}</p>
+                  <ol class="list-decimal pl-4 space-y-1 text-[10px] text-gray-600 mb-3">
+                    <li v-for="(doc, i) in $tm('service.consular_card.documents')" :key="i" class="leading-relaxed">{{ doc }}</li>
+                  </ol>
+                  <div class="bg-amber-50 p-3 rounded-lg border-l-4 border-amber-500">
+                    <p class="font-semibold text-amber-900 mb-1 text-xs">{{ $t('service.consular_card.note_title') }}</p>
+                    <ul class="space-y-1 text-[10px] text-amber-800">
+                      <li v-for="(note, i) in $tm('service.consular_card.notes')" :key="i" class="flex items-start gap-1">
+                        <span class="text-amber-600">►</span>
+                        <span>{{ note }}</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               
-              <div v-else-if="index === 2" class="text-sm text-gray-700 space-y-4">
-                <p class="text-gray-700 leading-relaxed">{{ $t('service.civil_status.intro') }}</p>
-                <div class="bg-purple-50 p-4 rounded-lg">
-                  <p class="font-semibold text-purple-900 mb-2">{{ $t('service.civil_status.birth.title') }}</p>
-                  <ol class="list-decimal pl-4 space-y-2 text-xs text-purple-800">
-                    <li v-for="(doc, i) in $tm('service.civil_status.birth.documents')" :key="i" class="leading-relaxed">{{ doc }}</li>
-                  </ol>
+              <div v-else-if="index === 2" class="text-sm text-gray-700 space-y-3 flex-1 flex flex-col">
+                <div class="flex-1 overflow-hidden">
+                  <p class="text-gray-700 leading-relaxed text-xs mb-3">{{ $t('service.civil_status.intro') }}</p>
+                  <div class="bg-purple-50 p-3 rounded-lg">
+                    <p class="font-semibold text-purple-900 mb-2 text-xs">{{ $t('service.civil_status.birth.title') }}</p>
+                    <ol class="list-decimal pl-3 space-y-1 text-[10px] text-purple-800">
+                      <li v-for="(doc, i) in $tm('service.civil_status.birth.documents')" :key="i" class="leading-relaxed">{{ doc }}</li>
+                    </ol>
+                  </div>
                 </div>
-                <button class="w-full mt-4 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold shadow-md hover:shadow-lg">
+                <button class="w-full px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold shadow-md hover:shadow-lg text-sm mt-auto">
                   {{ $t('service.civil_status.more_btn') }}
                 </button>
               </div>
               
-              <div v-else-if="index === 3" class="text-sm text-gray-700 space-y-4">
-                <div class="bg-indigo-50 p-4 rounded-lg">
-                  <p class="font-semibold text-indigo-900 mb-2">{{ $t('service.other_services.safe_conduct.title') }}</p>
-                  <p class="text-xs text-indigo-800 mb-3">{{ $t('service.other_services.safe_conduct.intro') }}</p>
-                  <p class="font-semibold text-indigo-900 text-xs mb-2">{{ $t('service.other_services.safe_conduct.documents_title') }}</p>
-                  <ol class="list-decimal pl-4 space-y-2 text-xs text-indigo-800">
-                    <li v-for="(doc, i) in $tm('service.other_services.safe_conduct.documents')" :key="i" class="leading-relaxed">{{ doc }}</li>
-                  </ol>
+              <div v-else-if="index === 3" class="text-sm text-gray-700 space-y-3 flex-1 flex flex-col">
+                <div class="flex-1 overflow-hidden">
+                  <div class="bg-indigo-50 p-3 rounded-lg">
+                    <p class="font-semibold text-indigo-900 mb-2 text-xs">{{ $t('service.other_services.safe_conduct.title') }}</p>
+                    <p class="text-[10px] text-indigo-800 mb-2">{{ $t('service.other_services.safe_conduct.intro') }}</p>
+                    <p class="font-semibold text-indigo-900 text-[10px] mb-1">{{ $t('service.other_services.safe_conduct.documents_title') }}</p>
+                    <ol class="list-decimal pl-3 space-y-1 text-[10px] text-indigo-800">
+                      <li v-for="(doc, i) in $tm('service.other_services.safe_conduct.documents')" :key="i" class="leading-relaxed">{{ doc }}</li>
+                    </ol>
+                  </div>
                 </div>
-                <button class="w-full mt-4 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold shadow-md hover:shadow-lg">
+                <button class="w-full px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold shadow-md hover:shadow-lg text-sm mt-auto">
                   {{ $t('service.other_services.more_btn') }}
                 </button>
               </div>

@@ -13,6 +13,7 @@
         <Senegal id="senegal" />
         <Gallery id="gallery" />
         <InfoPage id="news" />
+        <FAQ id="faq" />
         <Contact id="contact" />
       </div>
     </div>
@@ -31,4 +32,5 @@ import Senegal from '@/components/Senegal.vue'
 import Gallery from '@/components/Gallery.vue'
 import Contact from '@/components/Contact.vue'
 import InfoPage from '@/pages/InfoPage.vue'
+import FAQ from '@/components/FAQ.vue'
 </script>

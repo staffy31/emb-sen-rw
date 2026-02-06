@@ -557,5 +557,38 @@
         "description": "It promotes trade relations between Rwanda and Senegal. To this end, it facilitates contacts between business communities and employers' organizations of both countries. The Embassy of Senegal in Rwanda carries out these same functions for the other countries within its jurisdiction."
       }
     }
+  },
+  "faq": {
+    "badge": "F.A.Q",
+    "title": "Frequently Asked Questions !!",
+    "items": [
+      {
+        "question": "I am exclusively Senegalese, can I travel to Senegal without a passport ❓",
+        "answer": "If you only have Senegalese nationality and do not have time to apply for a passport before your departure to Senegal, you can request a Safe Conduct."
+      },
+      {
+        "question": "Do I need a visa to travel to Senegal ❓",
+        "answer": "Holders of refugee passports as well as nationals of countries not exempt from entry visa to Senegal must submit their applications to the Embassy. These applications are subject to prior or optional authorization from the Ministry of Interior, depending on the type of passport presented or the nationality of the applicant."
+      },
+      {
+        "question": "What documents must be provided for a visa application ❓",
+        "answer": "Visa applicants must have a travel document with a validity of at least six (06) months. To see the required documents or to download the visa application form, consult ► this link."
+      },
+      {
+        "question": "What are the steps to follow to give my Senegalese nationality to my child ❓",
+        "answer": "Before any procedure, it is necessary to proceed with the transcription of your child's birth certificate. Once this step is completed, if the child is under 5 years old, a consular registration request can be made."
+      },
+      {
+        "question": "My spouse is of Senegalese nationality, how can I benefit from it ❓",
+        "answer": "To acquire Senegalese nationality through marriage, you must approach the Dakar Court, the only authority authorized to rule on this type of request."
+      },
+      {
+        "question": "Where to find us ❓",
+        "answer": "We are located in Kigali, Kimihurura district KG 676 ST 44."
+      }
+    ],
+    "contact_title": "Do you have other questions?",
+    "contact_text": "Do not hesitate to contact us for more information",
+    "contact_btn": "Contact us"
   }
 }

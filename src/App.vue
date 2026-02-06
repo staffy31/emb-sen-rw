@@ -45,6 +45,7 @@ import Contact from './components/Contact.vue';
 import Ambassador from './components/Ambassador.vue';
 import Juridiction from './components/Juridiction.vue';
 import Mission from './components/Mission.vue';
+import FAQ from './components/FAQ.vue';
 
 export default {
   name: 'App',
@@ -59,7 +60,8 @@ export default {
     Service,
     Senegal,
     Gallery,
-    Contact
+    Contact,
+    FAQ
   },
   setup() {
     const loading = ref(true);

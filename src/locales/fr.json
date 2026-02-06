@@ -558,6 +558,39 @@
       },
       "more_btn": "En savoir plus"
     }
+  },
+  "faq": {
+    "badge": "F.A.Q",
+    "title": "Questions fréquentes posées !!",
+    "items": [
+      {
+        "question": "Je suis exclusivement sénégalais, puis je partir au Sénégal sans passeport ❓",
+        "answer": "Si vous avez uniquement la nationalité sénégalaise et que vous n'avez pas le temps de faire une demande passeport avant votre départ vers le Sénégal, vous pouvez demander un Sauf conduit."
+      },
+      {
+        "question": "Ai-je besoin d'un visa pour me rendre au Sénégal ❓",
+        "answer": "Les détenteurs de passeports de réfugiés ainsi que les ressortissants des pays non exemptés de visa d'entrée au Sénégal doivent déposer leurs demandes auprès de l'Ambassade. Ces demandes sont soumises à une autorisation préalable ou facultative du Ministère de l'Intérieur, selon le type de passeport présenté ou la nationalité du demandeur."
+      },
+      {
+        "question": "Quels documents doivent être fournis pour une demande de visa ❓",
+        "answer": "Les demandeurs de visa d'entrée doivent disposer de document de voyage ayant une validité de six (06) mois au moins. Pour voir les éléments constitutifs du dossier ou pour télécharger le formulaire de la demande de visa, consulter ► ce lien."
+      },
+      {
+        "question": "Quels sont les démarches à suivre pour donner ma nationalité sénégalaise à mon enfant ❓",
+        "answer": "Avant toute démarche, il convient de procéder à la transcription de l'acte de naissance de votre enfant. Une fois cette étape accomplie, si l'enfant est âgé de moins de 5 ans, une demande d'immatriculation consulaire peut être effectuée."
+      },
+      {
+        "question": "Mon épouse ou époux est de nationalité sénégalaise, comment puis-je en bénéficier ❓",
+        "answer": "Pour acquérir la nationalité sénégalaise via le mariage, il faut se rapprocher du Tribunal de Dakar, seul habilité à statuer sur ce type de demande."
+      },
+      {
+        "question": "Où nous trouver ❓",
+        "answer": "Nous sommes situés à Kigali, quartier Kimihurura KG 676 ST 44."
+      }
+    ],
+    "contact_title": "Vous avez d'autres questions ?",
+    "contact_text": "N'hésitez pas à nous contacter pour plus d'informations",
+    "contact_btn": "Contactez-nous"
   }
 
 }

@@ -82,7 +82,73 @@
     "paragraph3": "Through this platform, in addition to secure access to information on bilateral relations between Senegal and the above-mentioned countries, you will benefit from a wide range of consular services (entry visas to Senegal, civil status, registration, etc.), discover the rich facets—particularly touristic—of the Land of Teranga, while also following its political, economic, social, sports, and cultural news.",
     "paragraph4": "The website also provides, through useful links, valuable information on “Senegal Vision 2050” and investment opportunities in the country, as well as on the institutions of the Republic of Senegal.",
     "closing": "Dear visitors, this website is yours. Feel free to explore its various sections and, above all, share your suggestions with us to help improve our services.",
-    "signature": "Thank you for your visit! Jeureujeuf !!!",
+    "signature": "Thank you for your visit! Jeureujeuf !!!"
+  },
+  "info": {
+    "title": "INFOS.",
+    "subtitle": "Find here our Information, News and Press Releases",
+    "viewMore": "View more",
+    "download": "Download document",
+    "items": [
+      {
+        "category": ["PRESS RELEASE"],
+        "title": "Embassy Closure",
+        "description": "Thursday 25 and Friday 26 December 2025 are declared public holidays in Rwanda. Consequently, the Embassy will be closed on those dates.",
+        "date": "December 24, 2025",
+        "dateISO": "2025-12-24"
+      },
+      {
+        "category": ["DIASPORA"],
+        "title": "News Title 1",
+        "description": "Senegalese Associations and Dahira in Rwanda and other countries under the Embassy's jurisdiction.",
+        "date": "November 15, 2025",
+        "dateISO": "2025-11-15"
+      },
+      {
+        "category": ["PRESS RELEASE", "DIASPORA"],
+        "title": "News Title 1",
+        "description": "Celebration of the first edition of the National Diaspora Day – Call for participation and contributions!",
+        "date": "November 10, 2025",
+        "dateISO": "2025-11-10",
+        "image": "/publish/Premiere-edition-Journee-nationale-de-la-Diaspora-conv-1.png",
+        "file": "/publish/Premiere-edition-Journee-nationale-de-la-Diaspora.pdf"
+      },
+      {
+        "category": ["PRESS RELEASE"],
+        "title": "News Title 1",
+        "description": "It is brought to the attention of the public that due to the organization of the World Road Cycling Championships in Kigali from September 21 to 28, 2025, the Embassy services will be closed to the public during the next week.",
+        "date": "September 18, 2025",
+        "dateISO": "2025-09-18"
+      },
+      {
+        "category": ["PRESS RELEASE", "DIASPORA"],
+        "title": "News Title 1",
+        "description": "Launch of a special prize for technological and industrial innovation with military and paramilitary vocation, initiated by the President of the Republic of Senegal - Call for applications!",
+        "date": "June 10, 2025",
+        "dateISO": "2025-06-10"
+      },
+      {
+        "category": ["PRESS RELEASE"],
+        "title": "News Title 2",
+        "description": "The Embassy of Senegal in Rwanda is organizing the 4th edition of Mbaye Diagne Day: commemorative ceremony dedicated to the victims of the Genocide against the Tutsi in Rwanda, through the figure of Captain Mbaye DIAGNE, May 31, 2025 at the Gisozi Memorial. SAVE THE DATE.",
+        "date": "May 31, 2025",
+        "dateISO": "2025-05-31"
+      },
+      {
+        "category": ["PRESS RELEASE"],
+        "title": "Embassy Closure",
+        "description": "The Embassy of Senegal in Kigali will be closed on Friday, April 18 and Monday, April 21, 2025 on the occasion of public holidays in Rwanda.",
+        "date": "April 18, 2025",
+        "dateISO": "2025-04-18"
+      },
+      {
+        "category": ["PRESS RELEASE", "DIASPORA"],
+        "title": "News Title 3",
+        "description": "The Cheikh Hamidou KANE Digital University (UN-CHK) is launching a call for applications for the recruitment of students for its paid training programs for the 2024-2025 academic year. These courses, accessible remotely via the E-Learning platform, cover various levels (Bachelor, Master, Certificate) and are available in several fields such as science, technology, digital, as well as Letters, Humanities and Administration. Registration is open until February 15, 2025.",
+        "date": "February 15, 2025",
+        "dateISO": "2025-02-15"
+      }
+    ],
     "news": {
       "badges": {
         "pinned": "IMPORTANT",
@@ -557,6 +623,47 @@
         "description": "It promotes trade relations between Rwanda and Senegal. To this end, it facilitates contacts between business communities and employers' organizations of both countries. The Embassy of Senegal in Rwanda carries out these same functions for the other countries within its jurisdiction."
       }
     }
+  },
+  "general_presentation": {
+    "title": "General Presentation",
+    "about_title": "ABOUT SENEGAL",
+    "intro": "Senegal, \"Land of Teranga\" (hospitality), is located in West Africa.",
+    "general_info": "General Information",
+    "official_name": "Official Name:",
+    "official_name_value": "Republic of Senegal",
+    "regime": "Type of Regime:",
+    "regime_value": "Presidential",
+    "head_of_state": "Head of State:",
+    "head_of_state_value": "His Excellency Mr. Bassirou Diomaye Diakhar FAYE since March 2024",
+    "capital": "Capital:",
+    "capital_value": "Dakar",
+    "national_holiday": "National Holiday:",
+    "national_holiday_value": "April 4",
+    "area": "Area:",
+    "area_value": "196,722 km²",
+    "bordering_countries": "Bordering Countries:",
+    "bordering_countries_value": "Mauritania, Mali, Guinea Conakry, Guinea Bissau, Gambia",
+    "climate": "Climate:",
+    "climate_value": "Tropical climate characterized by two seasons: a dry season from November to June and a rainy season from July to October.",
+    "vegetation": "Vegetation:",
+    "vegetation_value": "Three types of vegetation: forest in the south, savanna in the center, and steppe in the north.",
+    "official_language": "Official Language:",
+    "official_language_value": "French",
+    "common_language": "Common Language:",
+    "common_language_value": "Wolof",
+    "currency": "Currency:",
+    "currency_value": "CFA Franc",
+    "population": "Population:",
+    "population_value": "18,126,390 inhabitants in 2023",
+    "flag_title": "Flag of Senegal:",
+    "flag_description": "The flag of the Republic of Senegal is composed of three equal vertical bands of Green, Yellow, and Red colors. It bears, in green, at the center of the yellow band, a five-pointed star.",
+    "seals_title": "Seals:",
+    "seals_description": "Senegal is a Republic with the unique feature of having two seals: A seal called the \"Seal of the Passing Lion\" which is reserved for the President of the Republic and is intended to mark major state acts, such as treaties, with a dry stamp. A seal called the \"Seal of the Baobab\", which stamps the acts of public administration.",
+    "coat_of_arms_title": "Coat of Arms of Senegal:",
+    "coat_of_arms_description": "The coat of arms of Senegal is composed of two parts. In the left part, on a red background, there is a lion and, on the right, on a yellow background, a baobab. At the center of the upper part, a five-pointed star.",
+    "map_title": "Map of Senegal",
+    "flag_image_title": "National Flag",
+    "emblem_title": "Coat of Arms"
   },
   "faq": {
     "badge": "F.A.Q",

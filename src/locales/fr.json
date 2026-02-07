@@ -82,7 +82,73 @@
     "paragraph3": "À travers cette plateforme, en plus d'un accès sécurisé aux informations sur les relations bilatérales entre le Sénégal et les pays cités plus haut, vous pourrez bénéficier d'une large gamme de services consulaires (visa d'entrée au Sénégal, état-civil, immatriculation, etc.), découvrir les riches facettes, notamment touristiques, du Pays de la Téranga, tout en ayant le loisir de suivre son actualité politique, économique, sociale, sportive et culturelle.",
     "paragraph4": "Le site offre également, via des liens utiles, de précieuses informations sur la « Vision Sénégal 2050 » et les opportunités d'investissement dans le pays, ainsi que sur les institutions de la République du Sénégal.",
     "closing": "Chers visiteurs, ce site étant le vôtre, n'hésitez surtout pas à en explorer les différentes rubriques mais aussi et surtout à nous faire part de vos suggestions en vue d'une meilleure offre de services.",
-    "signature": "Merci pour votre visite ! Jeureujeuf !!!",
+    "signature": "Merci pour votre visite ! Jeureujeuf !!!"
+  },
+  "info": {
+    "title": "INFOS.",
+    "subtitle": "Retrouver ici nos Informations, Actualités et Communiqués",
+    "viewMore": "Voir plus",
+    "download": "Télécharger le document",
+    "items": [
+      {
+        "category": ["COMMUNIQUE"],
+        "title": "Fermeture de l'Ambassade",
+        "description": "Les jeudi 25 et vendredi 26 décembre 2025 sont déclarés fériés au Rwanda, par conséquent, l'Ambassade sera fermée à ces dates.",
+        "date": "24 décembre 2025",
+        "dateISO": "2025-12-24"
+      },
+      {
+        "category": ["DIASPORA"],
+        "title": "Titre actualité 1",
+        "description": "Associations et Dahira Sénégalaises au Rwanda et dans les autres pays de la juridiction de l'Ambassade.",
+        "date": "15 novembre 2025",
+        "dateISO": "2025-11-15"
+      },
+      {
+        "category": ["COMMUNIQUE", "DIASPORA"],
+        "title": "Titre actualité 1",
+        "description": "Célébration de la première édition de la Journée nationale de la Diaspora – Appel à participation et contributions!",
+        "date": "10 novembre 2025",
+        "dateISO": "2025-11-10",
+        "image": "/publish/Premiere-edition-Journee-nationale-de-la-Diaspora-conv-1.png",
+        "file": "/publish/Premiere-edition-Journee-nationale-de-la-Diaspora.pdf"
+      },
+      {
+        "category": ["COMMUNIQUE"],
+        "title": "Titre actualité 1",
+        "description": "Il est porté à la connaissance du public qu'en raison de l'organisation des championnats du monde de cyclisme sur route à Kigali du 21 au 28 septembre 2025, les services de l'Ambassade seront fermés aux publics durant la semaine prochaine.",
+        "date": "18 septembre 2025",
+        "dateISO": "2025-09-18"
+      },
+      {
+        "category": ["COMMUNIQUE", "DIASPORA"],
+        "title": "Titre actualité 1",
+        "description": "Lancement d'un prix spécial pour l'innovation technologique et industrielle à vocation militaire et paramilitaire, initié par le Président de la République du Sénégal - Appel à candidatures!",
+        "date": "10 juin 2025",
+        "dateISO": "2025-06-10"
+      },
+      {
+        "category": ["COMMUNIQUE"],
+        "title": "Titre actualité 2",
+        "description": "L'Ambassade du Sénégal au Rwanda organise la 4ème édition Mbaye Diagne Day: cérémonie commémorative dédiée aux victimes du Génocide contre les Tutsi au Rwanda, à travers la figure du Capitaine Mbaye DIAGNE, 31 mai 2025 au Memorial de Gisozi. SAVE THE DATE.",
+        "date": "31 mai 2025",
+        "dateISO": "2025-05-31"
+      },
+      {
+        "category": ["COMMUNIQUE"],
+        "title": "Fermeture de l'Ambassade",
+        "description": "L'Ambassade du Sénégal à Kigali sera fermée vendredi 18 et lundi 21 avril 2025 à l'occasion des jours fériés au Rwanda.",
+        "date": "18 avril 2025",
+        "dateISO": "2025-04-18"
+      },
+      {
+        "category": ["COMMUNIQUE", "DIASPORA"],
+        "title": "Titre actualité 3",
+        "description": "L'Université numérique Cheikh Hamidou KANE (UN-CHK) lance un appel à candidatures pour le recrutement d'auditeurs dans le cadre de ses formations payantes pour l'année académique 2024-2025. Ces formations, accessibles à distance via la plateforme d'E-Learning, couvrent divers niveaux (Licence, Master, Certificat) et sont disponibles dans plusieurs domaines tels que les sciences, les technologies, le numérique, ainsi que les Lettres, les Sciences humaines et l'Administration. Les inscriptions sont ouvertes jusqu'au 15 février 2025.",
+        "date": "15 février 2025",
+        "dateISO": "2025-02-15"
+      }
+    ],
     "news": {
       "badges": {
         "pinned": "IMPORTANT",
@@ -558,6 +624,47 @@
       },
       "more_btn": "En savoir plus"
     }
+  },
+  "general_presentation": {
+    "title": "Présentation générale",
+    "about_title": "À PROPOS DU SÉNÉGAL",
+    "intro": "Le Sénégal, \"Pays de la Téranga\" (hospitalité), est situé en Afrique de l'Ouest.",
+    "general_info": "Données générales",
+    "official_name": "Nom officiel :",
+    "official_name_value": "République du Sénégal",
+    "regime": "Nature du régime :",
+    "regime_value": "Présidentiel",
+    "head_of_state": "Chef de l'État :",
+    "head_of_state_value": "Son Excellence Monsieur Bassirou Diomaye Diakhar FAYE depuis mars 2024",
+    "capital": "Capitale :",
+    "capital_value": "Dakar",
+    "national_holiday": "Fête nationale :",
+    "national_holiday_value": "4 avril",
+    "area": "Superficie :",
+    "area_value": "196 722 km²",
+    "bordering_countries": "Pays limitrophes :",
+    "bordering_countries_value": "Mauritanie, Mali, Guinée Conakry, Guinée Bissau, Gambie",
+    "climate": "Climat :",
+    "climate_value": "climat tropical caractérisé par deux saisons : une saison sèche de novembre à juin et une saison des pluies de juillet à octobre.",
+    "vegetation": "Végétation :",
+    "vegetation_value": "Trois types de végétation, forêt au sud, savane au centre et steppe au nord.",
+    "official_language": "Langue officielle :",
+    "official_language_value": "Français",
+    "common_language": "Langue courante :",
+    "common_language_value": "Wolof",
+    "currency": "Monnaie :",
+    "currency_value": "Le Franc CFA",
+    "population": "Population :",
+    "population_value": "18.126.390 d'habitants en 2023",
+    "flag_title": "Drapeau du Sénégal :",
+    "flag_description": "Le drapeau de la République du Sénégal est composé de trois bandes verticales égales, de couleurs Verte, Jaune et Rouge. Il porte, en vert, au centre de la bande jaune, une étoile à cinq branches.",
+    "seals_title": "Sceaux :",
+    "seals_description": "Le Sénégal est une République qui a la singularité d'avoir deux sceaux : Un sceau appelé le \"Sceau du Lion passant\" qui est réservé au président de la République et qui est destiné à marquer sous timbre sec les grands actes de l'état, comme les traités. Un sceau appelé le \"Sceau du Baobab\", qui estampille les actes de l'administration publique.",
+    "coat_of_arms_title": "Les armoiries du Sénégal :",
+    "coat_of_arms_description": "Les armoiries du Sénégal sont composées de deux parties. Dans la partie gauche, sur un fond rouge, figure un lion et, à droite, sur un fond jaune, un baobab. Au centre de la partie supérieure, une étoile à cinq branches.",
+    "map_title": "Carte du Sénégal",
+    "flag_image_title": "Drapeau National",
+    "emblem_title": "Armoiries"
   },
   "faq": {
     "badge": "F.A.Q",

@@ -697,5 +697,14 @@
     "contact_title": "Do you have other questions?",
     "contact_text": "Do not hesitate to contact us for more information",
     "contact_btn": "Contact us"
+  },
+  "gallery": {
+    "editions": [
+      "National Day of Senegal",
+      "1st edition \"Captain Mbaye DIAGNE\" 2022",
+      "2nd edition \"Captain Mbaye DIAGNE\" 2023",
+      "3rd edition \"Captain Mbaye DIAGNE\" 2024",
+      "4th edition \"Captain Mbaye DIAGNE\" 2025"
+    ]
   }
 }

@@ -249,22 +249,22 @@ function closeMenu() {
 }
 
 const embassyMenu = [
-  { key: 'coop', label: 'bilateral.title', href: '#cooperation' },
+  { key: 'coop', label: 'bilateral.title', href: '#embassy' },
   { key: 'ambassador', label: 'officials.ambassador.title', href: '#ambassador' },
-  { key: 'jurisdiction', label: 'menu.ambassade.items.2', href: '#jurisdiction' },
-  { key: 'missions', label: 'menu.ambassade.items.3', href: '#missions' },
+  { key: 'jurisdiction', label: 'menu.ambassade.items.2', href: '#juridiction' },
+  { key: 'missions', label: 'menu.ambassade.items.3', href: '#mission' },
 ]
 
 const consularMenu = [
-  { key: 'services', label: 'menu.consular.items.0', href: '#services' },
+  { key: 'services', label: 'menu.consular.items.0', href: '#service' },
   { key: 'faq', label: 'menu.consular.items.1', href: '#faq' },
 ]
 
 const senegalMenu = [
   { key: 'presentation', label: 'menu.senegal.items.0', href: '#presentation' },
-  { key: 'visit', label: 'menu.senegal.items.1', href: '#visit' },
-  { key: 'invest', label: 'menu.senegal.items.2', href: '#invest' },
-  { key: 'tourism', label: 'menu.senegal.items.3', href: '#tourism' },
+  { key: 'visit', label: 'menu.senegal.items.1', href: '#senegal' },
+  { key: 'invest', label: 'menu.senegal.items.2', href: '#senegal' },
+  { key: 'tourism', label: 'menu.senegal.items.3', href: '#senegal' },
 ]
 
 function switchLang(lang: string) {

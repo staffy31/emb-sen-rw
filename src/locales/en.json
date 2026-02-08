@@ -706,5 +706,17 @@
       "3rd edition \"Captain Mbaye DIAGNE\" 2024",
       "4th edition \"Captain Mbaye DIAGNE\" 2025"
     ]
+  },
+  "contact": {
+    "title": "OUR CONTACT DETAILS",
+    "description": "For any information request or consular assistance, please do not hesitate to contact us. Our teams are at your disposal.",
+    "address_title": "Our address",
+    "address": "KG 676 Street 44, Kimihurura-Kigali/Rwanda",
+    "hours": "Open: Monday to Friday from 09:00 AM to 05:00 PM",
+    "phone_title": "Call us",
+    "phone": "+250 252 507 900",
+    "email_title": "Send us an email",
+    "email1": "ambasenkigali@diplomatie.gouv.sn",
+    "email2": "info@ambasen-kigali.com"
   }
 }

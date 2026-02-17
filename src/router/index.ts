@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LandingPage from '@/views/LandingPage.vue'
 import GenericPage from '@/pages/GenericPage.vue'
+import VisaForm from '@/components/VisaForm.vue'
 
 export default createRouter({
   history: createWebHistory(),
@@ -8,6 +9,10 @@ export default createRouter({
     {
       path: '/',
       component: LandingPage
+    },
+    {
+      path: '/visa-form',
+      component: VisaForm
     },
     // AMBASSADE PAGES
     {

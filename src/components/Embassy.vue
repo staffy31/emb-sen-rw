@@ -57,9 +57,19 @@
         {{ t('timeline.title') }}
       </h3>
 
-      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-6">
-        <div v-for="(item, i) in t('timeline.items', {}, { returnObjects: true })" :key="i"
-          class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-green-600">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-green-600">
+          <div class="text-green-700 font-bold text-lg mb-2">
+            {{ t('timeline.visa_form.title') }}
+          </div>
+          <p class="text-gray-600 text-sm mb-4">
+            {{ t('timeline.visa_form.description') }}
+          </p>
+          <button @click="$router.push('/visa-form')" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm transition-colors">
+            {{ t('timeline.visa_form.button') }}
+          </button>
+        </div>
+        <div v-for="(item, i) in t('timeline.items', {}, { returnObjects: true })" :key="i" class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-green-600">
           <div class="text-green-700 font-bold text-lg mb-2">
             {{ item.date }}
           </div>
